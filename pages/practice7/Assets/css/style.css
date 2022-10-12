@@ -1,0 +1,32 @@
+.box {
+    background-color: red;
+    background-image: url("../img/lenna.png");
+    background-size: 100%;
+    width: 80vmin; 
+    height: 45vmin; 
+    padding: min(30px,5vmin);
+    border: 5px solid red;
+    
+}
+/* sevalenzuela@up.edu.mx*/
+.innerbox {
+    
+    font-size: 20vmin;
+    color: red;    
+    width: 100%;
+    text-align: center;    
+    height: 100%;    
+    border: 5px solid red;
+    position: relative;
+    
+
+}
+
+.textclass {
+    align-self: center;
+    left: 50%;
+    top: 50%;
+    margin: 0px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
