@@ -5,3 +5,11 @@
 p {
     font-size: 2em;
 }
+
+
+.parrafo-1 {
+    display: none;
+}
+.parrafo-2 {
+    visibility: hidden;
+}
