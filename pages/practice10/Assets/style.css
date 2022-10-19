@@ -1,0 +1,15 @@
+
+.menu{
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.body{
+    margin-top: 5em;
+}
