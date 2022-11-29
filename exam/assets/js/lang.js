@@ -49,7 +49,7 @@ const english = new Map([
     ["projects-arduino", "NTSC Composite Video from Arduino [C++]"],
     ["projects-arduino-txt", "Using an arduino board, we created the signal to generate a black and white image using the NTSC protocol."],
     ["projects-arduino-txt2", "Counting the length of the cycles of the Atmega2560, we are able to create a composite video signal following the correct timings."],
-    ["projects-intro", "Here you can find all the coding projects I'v worked on. Whenever I have time, I work on a project of a topic in which I'm interested, some time it was low level hardware, and now is procedural content for videogames."],
+    ["projects-intro", "Here you can find all the coding projects I've worked on. Whenever I have time, I work on a project of a topic in which I'm interested, some time it was low level hardware, and now is procedural content for videogames."],
     ["projects-minecraft-txt", "A C# library that offers a set of tools for the creation and manipulation of Mincraft content via code. Some of its features are:"],
     ["projects-minecraft-nbt", "Nbt file manipulation."],
     ["projects-minecraft-structure", "Mcstructure file manipulation."],
