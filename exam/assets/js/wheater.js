@@ -1,0 +1,1 @@
+$.get("/exam/fakeapi/weather.json")
