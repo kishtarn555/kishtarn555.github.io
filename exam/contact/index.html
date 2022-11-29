@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="/exam/assets/css/style.css" rel="stylesheet">
+    <title>Portafolio</title>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark border bg-dark shadow-sm">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav nav-fill row w-100">
+                <li class="col-xs-12 col-lg-2 text-center">
+                    <a class="nav-link text-light text-center hv" href="/exam#" it8n="nav-home">it8n.home</a>
+                </li>
+                <li class="col-xs-12 col-lg-2 text-center">
+                    <a class="nav-link text-light hv" href="/exam#" it8n="nav-skills">it8n.skills</a>
+                </li>
+                <li class="col-xs-12 col-lg-2 text-center dropdown">
+                    <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" it8n="nav-wdone">
+                        it8n.wdone
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item hv" href="/exam/projects" it8n="nav-projects">it8n.projects</a></li>
+                        <li><a class="dropdown-item hv" href="/exam/experience" it8n="nav-experience">nav-experience</a>
+                        </li>
+                        <li><a class="dropdown-item hv" href="/exam/homework" it8n="nav-homework">nav-homework</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item hv" href="#" it8n="nav-hobbies">Hobbies</a></li>
+                    </ul>
+                </li>
+                <li class="col-xs-12 col-lg-2 text-center">
+                    <a class="nav-link text-light hv" href="/exam/contact" it8n="nav-contact">it8n.contact</a>
+                </li>
+
+                <li class="col-xs-12 col-lg-4 text-center">
+                    <a class="btn btn-primary" id="spanish">Español</a>
+                    <a class="btn btn-secondary" id="english">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="fancy-title text-center " it8n="nav-contact">it8n.projects</h1>
+        <div>
+            <form onsubmit="return validate(this);" method="get">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a it8n="contact-name">Full name:</a>
+                        <input type="text" name="" id="" class="w-100">                        
+                    </div>                    
+                    <div class="col-xs-12 col-md-6">
+                        <a it8n="contact-phone">Phone number:</a>
+                        <input type="text" name="number" id="number" class="w-100">                        
+                    </div>     
+                    <div class="col-xs-12 col-md-6">
+                        <a it8n="contact-birth">Birthdate:</a>
+                        <input type="date" name="birthdate" id="birthdate" class="w-100" required>                        
+                    </div>
+                    <div class="col-xs-12">
+                        <a it8n="contact-address">Address:</a>
+                        <input type="text" name="address" id="address" class="w-100">                        
+                    </div>
+                    <div class="col-xs-12 mt-4">
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" class="btn btn-success w-25" value="OK">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <hr>
+        <div class="flex-column justify-content-center text-center">
+            <p it8n="footer-madeby">it8n.Esta pagina realizada por Hector Ricardez</p>
+            <p>(<a href="mailto:0236879@up.edu.mx">0236879@up.edu.mx</a>)</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="/exam/assets/js/lang.js"></script>
+        <script src="/exam/assets/js/contact.js"></script>
+</body>
+
+</html>

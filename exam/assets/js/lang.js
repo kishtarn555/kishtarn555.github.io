@@ -1,4 +1,9 @@
 const spanish = new Map([
+    ["contact-name", "Nombre completo:"],
+    ["contact-phone", "Teléfono:"],
+    ["contact-birth", "Fecha de nacimiento:"],
+    ["contact-address", "Dirección:"],
+
     ["footer-madeby", "Esta página fue hecha por Héctor Ricárdez"],
     ["index-presentation", "Hola, mi nombre es Héctor Fernando Ricárdez Lara y este es mi portafolio de programador. Aquí puedes encontrar todo lo que he hecho hasta ahora. Puedes usar la barra de navegación superior para ver mis proyectos escolares, los personales y también mi experiencia laboral."],
     ["index-presentation2", "Actualmente estudio mi quinto semestre en la Universidad Panamericana para obtener un título en Ingeniería en Inteligencia Articilial. Además, estoy persiguiendo mi segunda participación en el ICPC World Finals."],    
@@ -32,7 +37,12 @@ const spanish = new Map([
     
 ]);
 
-const english = new Map([
+const english = new Map([    
+    ["contact-name", "Full name:"],
+    ["contact-phone", "Phone number:"],
+    ["contact-birth", "Birthdate:"],
+    ["contact-address", "Address:"],
+
     ["footer-madeby", "This website was made by Hector Ricardez:"],
     ["index-presentation", "Hi I'm Hector Fernando Ricardez and this is my programming portfolio. Here you can find everything I've done so far. You can use the navigation bar at the top to see my school projects, personal ones and also my laboral experience."],
     ["index-presentation2", "I'm currently studying my fifth semester at Universidad Panamerica to get my Engineering Degree in Artifial Intelligence. And I\'m also  seeking my second ICPC World Finals participation."],
