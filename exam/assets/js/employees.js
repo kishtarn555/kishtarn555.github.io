@@ -34,6 +34,10 @@ function doRequest() {
             alert(`error ${request.status} ${request.statusText}`)
         }
     };
+    request.onerror = () => {
+        console.log(`error obteniendo conexión a la API`)
+            alert(`error obteniendo conexión a la API`)
+    };
     
 };
 $("document").ready(()=>{
