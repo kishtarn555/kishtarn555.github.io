@@ -52,7 +52,7 @@ const spanish = new Map([
 
 const english = new Map([   
     ["skills-algorithm-desc", "Graph algorithms such as Prim, Tarjan, Dijkstra, A*, etc. \n My strong point are data structures such as agumented balanced binary trees."],
-    ["experience-competitive", "Six years of competitive programming.<br> Acheived codeforces rating of 2140, twice-winner of OMI, bronze medalist at IOI and honors at ICPC WF 2022"],
+    ["experience-competitive", "Six years of competitive programming.<br> Acheived a codeforces rating of 2140, twice-winner of OMI, bronze medalist at IOI and honors at ICPC WF 2022"],
     ["today", "today"],
     ["python", "Got real experience at work."],
     ["cpp", "Used for competitive programming."],
@@ -70,7 +70,7 @@ const english = new Map([
     ["contact-address", "Address:"],
 
     ["footer-madeby", "This website was made by Hector Ricardez:"],
-    ["index-presentation", "Hi, I'm Hector Fernando Ricardez and this is my programming portfolio. Here you can find everything I've done so far. You can use the navigation bar at the top to see my school projects, personal ones and also my laboral experience."],
+    ["index-presentation", "Hi, I'm Hector Fernando Ricardez and this is my programming portfolio. Here you can find everything I've done so far. You can use the navigation bar at the top to see my school projects, personal ones and also my work experience."],
     ["index-presentation2", "I'm currently studying my fifth semester at Universidad Panamerica to get my Engineering Degree in Artifial Intelligence. And I\'m also  seeking my second ICPC World Finals participation."],
     ["index-presentation3", "I love programming, I enjoy creating something from my creativity as well as the satisfaction when I solve the challenges that pop up along the way."],
     ["index-presentation4", "Start exploring:"],
