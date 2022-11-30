@@ -30,7 +30,7 @@ const spanish = new Map([
     ["nav-wdone", "Mi trabajo"],
     ["nav-experience","Experiencia"],
 
-    ["projects-karel-txt", "Realicé dos PR al proyecto de código abierto conocido como Karel.js. Arreglue un bug por un undefined inesperado."],
+    ["projects-karel-txt", "Realicé dos PR al proyecto de código abierto conocido como Karel.js. Arreglé un bug por un undefined inesperado."],
     ["projects-arduino", "Video Compuesto NTSC desde un Arduino [C++]"],
     ["projects-arduino-txt", "Usando una placa de Arduino, cree la señal NTSC necesaria para mostrar imagines a blanco y negro en un televisor."],
     ["projects-arduino-txt2", "Fue necesario contar la duración de los ciclos del programa para generar la señal NTSC con los tiempos correctos."],    
@@ -70,7 +70,7 @@ const english = new Map([
     ["contact-address", "Address:"],
 
     ["footer-madeby", "This website was made by Hector Ricardez:"],
-    ["index-presentation", "Hi I'm Hector Fernando Ricardez and this is my programming portfolio. Here you can find everything I've done so far. You can use the navigation bar at the top to see my school projects, personal ones and also my laboral experience."],
+    ["index-presentation", "Hi, I'm Hector Fernando Ricardez and this is my programming portfolio. Here you can find everything I've done so far. You can use the navigation bar at the top to see my school projects, personal ones and also my laboral experience."],
     ["index-presentation2", "I'm currently studying my fifth semester at Universidad Panamerica to get my Engineering Degree in Artifial Intelligence. And I\'m also  seeking my second ICPC World Finals participation."],
     ["index-presentation3", "I love programming, I enjoy creating something from my creativity as well as the satisfaction when I solve the challenges that pop up along the way."],
     ["index-presentation4", "Start exploring:"],
