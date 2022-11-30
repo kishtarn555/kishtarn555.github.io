@@ -15,13 +15,13 @@ function getIcon(data) {
                 return '<h2 class="text-center bg-info"><i class="bi bi-cloud-sun"></i> Nublado</h2>';              
                 break;
         case "sunny":            
-            return '<h2 class="text-center bg-info"><i class="bi bi-brightness-high"></i> Soleado/h2>';             
+            return '<h2 class="text-center bg-info"><i class="bi bi-brightness-high"></i> Soleado</h2>';             
             break;
             case "windy":            
-                return '<h2 class="text-center bg-warning"><i class="bi bi-wind"></i> Ventarrón/h2>'; 
+                return '<h2 class="text-center bg-warning"><i class="bi bi-wind"></i> Ventarrón</h2>'; 
                 break;
         case "tornado":            
-            return '<h2 class="text-center bg-danger"><i class="bi bi-wind"></i> TORNADO/h2>'; 
+            return '<h2 class="text-center bg-danger"><i class="bi bi-wind"></i> TORNADO</h2>'; 
             break;
         default:
             return '<h2 class="text-center">ERROR</h2>'; 
