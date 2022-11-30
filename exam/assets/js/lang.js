@@ -1,4 +1,12 @@
-const spanish = new Map([
+const spanish = new Map([ 
+    
+    ["meta-exp", "Trabaje en infraestructura de datos. Use principalmente Python y como medio secundario PHP, SQL."],
+    ["meta-verano", "Boston USA - Verano 2022"],
+    ["experience-intro", "Mi experiencia:"],
+    ["skills-description", "Aquí estan las habilidad que tengo y los lenguajes de programación que conozco"],    
+    ["skills-algorithm", "Algoritmos intermedios"],
+    ["skills-data", "Estructura de datos"],   
+    ["hw-description", "Lista de tareas:"],
     ["contact-name", "Nombre completo:"],
     ["contact-phone", "Teléfono:"],
     ["contact-birth", "Fecha de nacimiento:"],
@@ -11,7 +19,7 @@ const spanish = new Map([
     ["index-presentation4", "Explora:"],
     ["nav-contact", "Contacto"],
     ["nav-home","Inicio"],
-    ["nav-homework","Tareas"],
+    ["nav-homework","Tarea"],
     ["nav-projects","Proyectos"],
     ["nav-skills","Habilidades"],
     ["nav-wdone", "Mi trabajo"],
@@ -37,7 +45,14 @@ const spanish = new Map([
     
 ]);
 
-const english = new Map([    
+const english = new Map([     
+    ["meta-exp", "Worked on data infrastructure. Used mainly Python and some PHP and SQL."],
+    ["meta-verano", "Boston USA - Summer 2022"],
+    ["experience-intro", "I'm still at university but I've had some experience. It has been:"],   
+    ["skills-description", "Here I have the skills and programming languages I know"],
+    ["skills-algorithm", "Intermidiate Algorithms"],
+    ["skills-data", "Intermidiate Data Structures"],
+    ["hw-description", "Homework list:"],
     ["contact-name", "Full name:"],
     ["contact-phone", "Phone number:"],
     ["contact-birth", "Birthdate:"],

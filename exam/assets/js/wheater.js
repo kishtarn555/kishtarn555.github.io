@@ -45,7 +45,8 @@ ${getIcon(pred.preditcion)}
 
 
 function load() {
-    $.get("/exam/fakeapi/weather.json", function getWeather(data) {
+    $.get("https://raw.githubusercontent.com/kishtarn555/kishtarn555.github.io/main/exam/fakeapi/weather.json", function getWeather(data) {
+        data= JSON.parse(data);
         console.log(data);
         $("#location").text(data.location)
         $("#p0").html(getPanel(data,0))
