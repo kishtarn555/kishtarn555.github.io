@@ -36,19 +36,19 @@
         {
             "preditcion": "sunny",
             "rain":18.1,
-            "temperature": 13.2,
+            "temperature": 16.2,
             "wind": 30
         },
         {
             "preditcion": "windy",
             "rain":80.1,
-            "temperature": 13.2,
+            "temperature": 13.5,
             "wind": 53
         },
         {
             "preditcion": "tornado",
             "rain":99.9,
-            "temperature": 13.2,
+            "temperature": 15.2,
             "wind": 130
         }
     ]

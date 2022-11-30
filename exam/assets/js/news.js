@@ -9,6 +9,7 @@ function getPanel(data,index) {
     
 return `
 <h3>${data.header}</h3>
+<p>${data.date}</p>
 <p>${data.summary}</p>
 <a class="btn btn-primary" onclick="loadNews(${index})">Leer más</a>
 `;

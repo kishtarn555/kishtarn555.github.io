@@ -8,7 +8,7 @@ function getRow(data){
         <td>${data.id}</td>
         <td>${data.name}</td> 
         <td>${data.username}</td> 
-        <td>${data.email}</td>   
+        <td><a href="mailto:${data.email}">${data.email}</a></td>   
         <td>${formatAddress(data.address)}</td> 
     </tr>`;
     console.log(response);

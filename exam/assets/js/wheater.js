@@ -21,7 +21,7 @@ function getIcon(data) {
                 return '<h2 class="text-center bg-warning"><i class="bi bi-wind"></i> Ventarrón</h2>'; 
                 break;
         case "tornado":            
-            return '<h2 class="text-center bg-danger"><i class="bi bi-wind"></i> TORNADO</h2>'; 
+            return '<h2 class="text-center bg-danger"><i class="bi bi-tornado"></i> TORNADO</h2>'; 
             break;
         default:
             return '<h2 class="text-center">ERROR</h2>'; 
