@@ -58,7 +58,7 @@ const english = new Map([
     ["today", "today"],
     ["python", "Got real experience at work."],
     ["cpp", "Used for competitive programming."],
-    ["csharp", "Developed with it a large amount of personal projects."],  
+    ["csharp", "Used it for a large amount of personal projects."],  
     ["meta-exp", "Worked on data infrastructure. Used mainly Python and some PHP and SQL."],
     ["meta-verano", "Boston USA - Summer 2022"],
     ["experience-intro", "I'm still at university but I've had some experience. It has been:"],   
