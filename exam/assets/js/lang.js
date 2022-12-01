@@ -1,5 +1,6 @@
 const spanish = new Map([ 
     ["skills-algorithm-desc", "Algoritmos de grafo como Prim, Tarjan, Dijkstra, A*, etc. \n Mi punto fuerte son estructura de datos como lo son los arboles binarios balanceads aumentados."],
+    ["experience-cp", "Programación Competitiva"],
     ["experience-competitive", "Seis años de programación competitiva. <br> Obtuve un rating de 2140 en codeforces, bicampeón de la OMI, medallista de bronce en la IOI y ganador de honores en la ICPC WF 2022."],
     ["today", "hoy"],
     ["python", "He usado python en un ambiente laboral."],
@@ -52,6 +53,7 @@ const spanish = new Map([
 
 const english = new Map([   
     ["skills-algorithm-desc", "Graph algorithms such as Prim, Tarjan, Dijkstra, A*, etc. \n My strong point are data structures such as agumented balanced binary trees."],
+    ["experience-cp", "Competitive Programming"],
     ["experience-competitive", "Six years of competitive programming.<br> Acheived a codeforces rating of 2140, twice-winner of OMI, bronze medalist at IOI and honors at ICPC WF 2022"],
     ["today", "today"],
     ["python", "Got real experience at work."],
@@ -60,7 +62,7 @@ const english = new Map([
     ["meta-exp", "Worked on data infrastructure. Used mainly Python and some PHP and SQL."],
     ["meta-verano", "Boston USA - Summer 2022"],
     ["experience-intro", "I'm still at university but I've had some experience. It has been:"],   
-    ["skills-description", "Here I have the skills and programming languages I know"],
+    ["skills-description", "Here I show the skills and programming languages I know"],
     ["skills-algorithm", "Intermidiate Algorithms"],
     ["skills-data", "Intermidiate Data Structures"],
     ["hw-description", "Homework list:"],
