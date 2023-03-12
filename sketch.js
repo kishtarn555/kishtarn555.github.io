@@ -7,7 +7,8 @@ const countries = {
     "Germany": [255, 0, 0, 255],
     "Croatia": [0, 255, 255, 255],
     "Azerbaijan": [255, 0, 191, 255],
-    "Turkey": [0, 153, 151, 255]
+    "Turkey": [0, 153, 151, 255],
+    "Bangladesh": [196, 196, 0, 255],
 
 }
 function preload() {
