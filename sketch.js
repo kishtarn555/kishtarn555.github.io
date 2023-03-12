@@ -1,7 +1,7 @@
 let img;
 const countries = {
     "Belize": [255, 106, 0, 255],
-    "Argentina": [76, 106, 0, 255],
+    "Argentina": [76, 255, 0, 255],
     "Morocco": [127, 51, 0, 255],
     "Nigeria": [0, 0, 255, 255],
     "Germany": [255, 0, 0, 255],
