@@ -70,10 +70,9 @@ function createColCards(n_cards){
       case 6: div_card.classList.add("row-md-2");break;
     }
     const card = createCard(
-      "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",    
-      "c1",
-      "ejemplo texto");
-    card.classList.add("margin-div");
+      "../Imagenes/"+dataCards[i].img,    
+      dataCards[i].title,
+      dataCards[i].text);
     div_card.appendChild(card);
     row.appendChild(div_card);
   }

@@ -1,6 +1,6 @@
 const historyData1 =  [
     {
-        img: "sep_c1.png",
+        img: "sep_c1.png", //la otra parte de la ruta esta en cards
         title:"Primeros humanos",
         text:"11,000 AC"
     },
@@ -19,7 +19,7 @@ const historyData1 =  [
 
 const historyData2 =  [
     {
-        img: "sep_c1.png",
+        img: "malvinas.jpeg",
         title:"Independencia",
         text:"Martes 9 de julio de 1816"
     },
