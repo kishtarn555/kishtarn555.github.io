@@ -8,6 +8,16 @@
     margin-bottom: 10px;
 }
 
+.footer {
+    text-align: center;
+    background-color: #101935;
+    font-size: 20px;
+    height: 10vh;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
 .subheader {
     text-align: center;
     background-color: #9AD4D6;
@@ -21,6 +31,11 @@
 
 .margin-div{
     margin: 10px;
+}
+
+.margin-top-bottom{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 body{
