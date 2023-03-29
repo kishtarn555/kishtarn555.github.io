@@ -102,14 +102,14 @@ const historyData5 =  [
     },
     
     {
-        img: "alcohol.jpg",
-        title:"Alcohol es ilegal",
-        text:"El alcohol es ilegal por motivos religiosos, recordemos que es un país musulmán"
+        img: "concert.jpg",
+        title:"Concierto de una banda local",
+        text:""
     },
     {
-        img: "bar.jpg",
-        title:"Pero los turistas pueden comprarlo",
-        text:"Si eres turista, puedes comprar alcohol en tu hotel, este fue el bar de nuestro hotel donde nos relajamos después del ICPC"
+        img: "hotel.jpg",
+        title:"Vista de nuestro Hotel",
+        text:""
     },
 
 ]
