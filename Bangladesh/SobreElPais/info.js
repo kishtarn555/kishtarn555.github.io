@@ -32,7 +32,7 @@ const historyData2 =  [
     {
         img: "founder.jpg",
         title:"Independencia de Pakistán",
-        text:"26 de marzo de 1971 - Sheikh Mujibur Rahman es considerado el padre de la patria, aparece en múltiples imagines"
+        text:"26 de marzo de 1971 - Sheikh Mujibur Rahman es considerado el padre de la patria, aparece en múltiples imágenes"
     },
 
 ]
@@ -58,6 +58,27 @@ const historyData3 =  [
         img: "kabaddi.jpg",
         title:"Kabaddi (Ha-du-du)",
         text:"Deporte nacional de Bangladés, pero poco popular (Como la Charrería en México) "
+    },
+
+]
+
+
+const historyData3B =  [
+    
+    {
+        img: "tigre.jpg",
+        title:"Tigre de bengala",
+        text:"Animal nacional, también los hay de pelaje blanco"
+    },
+    {
+        img: "flood.jpg",
+        title:"Inundaciones",
+        text:"Bangladesh tiene muchos ríos, pero por eso 40% del territorio se inunda, problema agravado por el cambio climático"
+    },
+    {
+        img: "textile.jpg",
+        title:"Industria textil",
+        text:"Mayor industria de exportación del país, compitiendo directamente con China en la producción de prendas."
     },
 
 ]
