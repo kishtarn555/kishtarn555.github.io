@@ -74,60 +74,12 @@ const curiosityData =  [
     {
         img: "catedral.jpg",
         title:"Catedral de Zagreb",
-        text:""
+        text: "Edificio famoso en Croacia"
     },
     {
-        img: "csto.png",
-        title:"Armenia es parte de CSTO",
-        text:"Armenia es aliada con CSTO (Rusia). Azerbaiyán es aliada con Turquía (Turkiye)"
-    },
+        img: "nikolas.jpg",
+        title:"Nikola Tesla",
+        text:"Nació en actual Smiljan, Croacia"
+    }
 
 ]
-
-
-const historyData4 =  [
-    {
-        img: "fire.jpg",
-        title:"IOI 2019",
-        text:"Anfitrión del IOI 2019, por eso estuve allí."
-    },
-    {
-        img: "olympics.jpg",
-        title:"Olimpiadas",
-        text:"Anfitriones de los primeros juegos olímpicos europeos en 2015 (Villa olímpica)"
-    },
-    
-    {
-        img: "auditorio.jpg",
-        title:"Heydar Aliyev Center",
-        text:"Construido por la famosa arquitecta Zaha Hadid"
-    },
-
-]
-
-
-const historyData5 =  [
-    {
-        img: "russia.png",
-        title:"Ruso",
-        text:"El idioma ruso todavía se encuentra muy presente en el país, 38% lo hablan"
-    },
-    {
-        img: "firewall.jpg",
-        title:"Yanar Dag",
-        text:"Flama de gas natural, haciendo honor a la 'tierra del fuego'"
-    },
-    
-    {
-        img: "doncella.jpg",
-        title:"Torre de la doncella",
-        text:"Construcción famosa e histórica del sigo XII"
-    },
-    {
-        img: "hotel.jpg",
-        title:"Vista de nuestro Hotel",
-        text:""
-    },
-
-]
-
