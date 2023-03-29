@@ -13,49 +13,62 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="bg-light">
     <div class="header">
         BANGLADÉS: Sobre el país
     </div>
+    <div class="container">
+        <div class="subheader">
+            Introducción
+        </div>
+        
+        <div id="history-container" >
+            <div id="container-1" class="margin-div">
+                <script>
+                    const row_cards_1 = createRowCards(3,historyData1); //historydata1 viene de info.js en la carpeta de Argentina
+                    document.getElementById("container-1").appendChild(row_cards_1);
+                </script>
+            </div>
+            <div class="subheader">        
+                De Colonia a Bangladés
+            </div>
+            <div id="container-2" class="margin-div">
+                <script>
+                    const row_cards_2 = createRowCards(3,historyData2);
+                    document.getElementById("container-2").appendChild(row_cards_2);
+                </script>
+            </div>
+        </div>
+        
+        <hr>
 
-    <div class="subheader">
-        Historia
-    </div>
-    
-    <div id="history-container" >
-        <div id="container-1" class="margin-div">
+        <div class="subheader">
+            Clima
+        </div>
+
+        <div class="subheader">
+            Datos interesantes
+        </div>
+        <div class="mx-auto">
+            <h3 class="display-4">Deporte</h3>
+        </div>
+        <div id="container-3" class="margin-div">
             <script>
-                const row_cards_1 = createRowCards(3,historyData1); //historydata1 viene de info.js en la carpeta de Argentina
-                document.getElementById("container-1").appendChild(row_cards_1);
+                const row_cards_3 = createRowCards(4,historyData3);
+                document.getElementById("container-3").appendChild(row_cards_3);
             </script>
         </div>
-        <h3>De Colonia a Bangladés</h3>
-        <div id="container-2" class="margin-div">
+        
+        <div class="subheader">
+            Visite este país
+        </div>
+        <div id="container-4" class="margin-div">
             <script>
-                const row_cards_2 = createRowCards(3,historyData2);
-                document.getElementById("container-2").appendChild(row_cards_2);
+                const row_cards_4 = createRowCards(4,historyData4);
+                document.getElementById("container-4").appendChild(row_cards_4);
             </script>
         </div>
     </div>
-    
-    <hr>
-
-    <div class="subheader">
-        Clima
-    </div>
-
-    <div class="subheader">
-        Datos interesantes
-    </div>
-
-    <h3>Criquet</h3>
-    <div id="container-3" class="margin-div">
-        <script>
-            const row_cards_3 = createRowCards(3,historyData3);
-            document.getElementById("container-3").appendChild(row_cards_3);
-        </script>
-    </div>
-    
 
 
  <!--

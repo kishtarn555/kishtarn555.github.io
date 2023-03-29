@@ -1,18 +1,18 @@
 const historyData1 =  [
     {
-        img: "sep_c1.png", //la otra parte de la ruta esta en cards
-        title:"Fundación",
-        text:"26 de marzo de 1971"
+        img: "glaf.png", //la otra parte de la ruta esta en cards
+        title:"Bandera",
+        text:"La bandera es un fondo verde con un sol rojo colocado ligeramente a la izquierda del centro"
     },
     {
-        img: "",
-        title:"Colonia",
-        text:"Siglos XVI - XIX "
+        img: "daca.jpg",
+        title:"Daca",
+        text:"Capital de Daca, con una población de 19.578 millones de personas (CDMX tiene 19.979 Mdp)"
     },
     {
-        img: "bandera.png",
-        title:"Creación de bandera",
-        text:"1812"
+        img: "ubicacion.png",
+        title:"Ubicación",
+        text:"Se encuentra en Asia del sur, colinda con India, Birmania y el Océano Índico"
     },
 
 ]
@@ -20,9 +20,9 @@ const historyData1 =  [
 const historyData2 =  [
     
     {
-        img: "independencia.jpg",
+        img: "britishIndia.jpg",
         title:"Colonia Británica",
-        text:"India, Pakistán y Bangladés formaron parte de la Colonia India de Reino Unido"
+        text:"1757 - Bangladés, junto con actual India y Pakistán, formó parte de la colonia británica"
     },
     {
         img: "eastPakistan.jpg",
@@ -32,7 +32,7 @@ const historyData2 =  [
     {
         img: "founder.jpg",
         title:"Independencia de Pakistán",
-        text:"26 de marzo de 1971"
+        text:"26 de marzo de 1971 - Sheikh Mujibur Rahman es considerado el padre de la patria, aparece en múltiples imagines"
     },
 
 ]
@@ -40,19 +40,50 @@ const historyData2 =  [
 const historyData3 =  [
     
     {
-        img: "independencia.jpg",
-        title:"Colonia Británica",
-        text:"India, Pakistán y Bangladés formaron parte de la Colonia India de Reino Unido"
+        img: "banglaCricket.jpg",
+        title:"Criquet",
+        text:"Deporte muy popular en Bangladés"
     },
     {
         img: "cricket.png",
-        title:"Cricket vs Futbol",
+        title:"Criquet vs Futbol",
         text:"Comparación de los deportes en Google Trends"
     },
     {
         img: "mundoCriquet.png",
         title:"Popularidad del deporte en el mundo",
-        text:"Se ve famoso en el continente indio y en partes de Oceania y la peninsula Arabia "
+        text:"Es popular en el continente indio y en partes de Oceania y la peninsula Arabia "
+    },
+    {
+        img: "kabaddi.jpg",
+        title:"Kabaddi (Ha-du-du)",
+        text:"Deporte nacional de Bangladés, pero poco popular (Como la Charrería en México) "
+    },
+
+]
+
+
+const historyData4 =  [
+    
+    {
+        img: "semaforos.jpg",
+        title:"Tráfico",
+        text:"Deporte muy popular en Bangladés"
+    },
+    {
+        img: "cricket.png",
+        title:"Criquet vs Futbol",
+        text:"Comparación de los deportes en Google Trends"
+    },
+    {
+        img: "mundoCriquet.png",
+        title:"Popularidad del deporte en el mundo",
+        text:"Es popular en el continente indio y en partes de Oceania y la peninsula Arabia "
+    },
+    {
+        img: "kabaddi.jpg",
+        title:"Kabaddi (Ha-du-du)",
+        text:"Deporte nacional de Bangladés, pero poco popular (Como la Charrería en México) "
     },
 
 ]
