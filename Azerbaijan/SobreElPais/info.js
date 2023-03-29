@@ -98,14 +98,9 @@ const historyData4 =  [
     },
     
     {
-        img: "alcohol.jpg",
-        title:"Alcohol es ilegal",
-        text:"El alcohol es ilegal por motivos religiosos, recordemos que es un país musulmán"
-    },
-    {
-        img: "bar.jpg",
-        title:"Pero los turistas pueden comprarlo",
-        text:"Si eres turista, puedes comprar alcohol en tu hotel, este fue el bar de nuestro hotel donde nos relajamos después del ICPC"
+        img: "auditorio.jpg",
+        title:"Heydar Aliyev Center",
+        text:"Construido por la famosa arquitecta Zaha Hadid"
     },
 
 ]
@@ -113,20 +108,20 @@ const historyData4 =  [
 
 const historyData5 =  [
     {
-        img: "board.jpg",
-        title:"Carrom",
-        text:"Juego de mesa, similar a billar y canicas"
+        img: "russia.png",
+        title:"Ruso",
+        text:"El idioma ruso todavía se encuentra muy presente en el país, 38% lo hablan"
     },
     {
-        img: "bici.jpg",
-        title:"Rickshaw",
-        text:"Son 'Bicitaxis' repartidos por la ciudad, bastante comunes"
+        img: "firewall.jpg",
+        title:"Yanar Dag",
+        text:"Flama de gas natural, haciendo honor a la 'tierra del fuego'"
     },
     
     {
-        img: "concert.jpg",
-        title:"Concierto de una banda local",
-        text:""
+        img: "doncella.jpg",
+        title:"Torre de la doncella",
+        text:"Construcción famosa e histórica del sigo XII"
     },
     {
         img: "hotel.jpg",
