@@ -73,3 +73,59 @@ const paisajes_data_2 =  [
     },
 
 ]
+
+const relaciones_comer =  [
+    {
+        img: "brasil.png",
+        title:"Brasil",
+        text:""
+    },
+    {
+        img: "china.jpg",
+        title:"China",
+        text:""
+    },
+    {
+        img: "UE.png",
+        title:"Unión Europea",
+        text:""
+    },
+    {
+        img: "USA.png",
+        title:"Estados Unidos",
+        text:""
+    }
+]
+
+const emp_tec =  [
+    {
+        img: "ml.jpg",
+        title:"Mercado Libre",
+        text:""
+    },
+    {
+        img: "glob.jpeg",
+        title:"Globant",
+        text:""
+    },
+    {
+        img: "acc.jpg",
+        title:"Accenture",
+        text:""
+    },
+    {
+        img: "SAP.jpg",
+        title:"SAP",
+        text:""
+    },
+    {
+        img: "sf.jpeg",
+        title:"Salesforce",
+        text:""
+    },
+    {
+        img: "Oracle.jpeg",
+        title:"Oracle",
+        text:""
+    }
+]
