@@ -64,26 +64,53 @@ const historyData3 =  [
 
 
 const historyData4 =  [
+    {
+        img: "icpc.jpg",
+        title:"ICPC 2022",
+        text:"Anfitrión del ICPC 2022, por eso estuve allí."
+    },
+    {
+        img: "traffic.jpg",
+        title:"Tráfico",
+        text:"A diferencia de occidente, los vehículos no utilizan semáforos si no que pitan para informar de intención y manejan entre ellos, similar a como las personas caminan"
+    },
     
     {
-        img: "semaforos.jpg",
-        title:"Tráfico",
-        text:"Deporte muy popular en Bangladés"
+        img: "alcohol.jpg",
+        title:"Alcohol es ilegal",
+        text:"El alcohol es ilegal por motivos religiosos, recordemos que es un país musulmán"
     },
     {
-        img: "cricket.png",
-        title:"Criquet vs Futbol",
-        text:"Comparación de los deportes en Google Trends"
-    },
-    {
-        img: "mundoCriquet.png",
-        title:"Popularidad del deporte en el mundo",
-        text:"Es popular en el continente indio y en partes de Oceania y la peninsula Arabia "
-    },
-    {
-        img: "kabaddi.jpg",
-        title:"Kabaddi (Ha-du-du)",
-        text:"Deporte nacional de Bangladés, pero poco popular (Como la Charrería en México) "
+        img: "bar.jpg",
+        title:"Pero los turistas pueden comprarlo",
+        text:"Si eres turista, puedes comprar alcohol en tu hotel, este fue el bar de nuestro hotel donde nos relajamos después del ICPC"
     },
 
 ]
+
+
+const historyData5 =  [
+    {
+        img: "board.jpg",
+        title:"Carrom",
+        text:"Juego de mesa, similar a billar y canicas"
+    },
+    {
+        img: "bici.jpg",
+        title:"Rickshaw",
+        text:"Son 'Bicitaxis' repartidos por la ciudad, bastante comunes"
+    },
+    
+    {
+        img: "alcohol.jpg",
+        title:"Alcohol es ilegal",
+        text:"El alcohol es ilegal por motivos religiosos, recordemos que es un país musulmán"
+    },
+    {
+        img: "bar.jpg",
+        title:"Pero los turistas pueden comprarlo",
+        text:"Si eres turista, puedes comprar alcohol en tu hotel, este fue el bar de nuestro hotel donde nos relajamos después del ICPC"
+    },
+
+]
+
