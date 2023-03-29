@@ -36,3 +36,23 @@ const historyData2 =  [
     },
 
 ]
+
+const historyData3 =  [
+    
+    {
+        img: "independencia.jpg",
+        title:"Colonia Británica",
+        text:"India, Pakistán y Bangladés formaron parte de la Colonia India de Reino Unido"
+    },
+    {
+        img: "cricket.png",
+        title:"Cricket vs Futbol",
+        text:"Comparación de los deportes en Google Trends"
+    },
+    {
+        img: "mundoCriquet.png",
+        title:"Popularidad del deporte en el mundo",
+        text:"Se ve famoso en el continente indio y en partes de Oceania y la peninsula Arabia "
+    },
+
+]
