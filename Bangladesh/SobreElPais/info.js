@@ -7,7 +7,7 @@ const historyData1 =  [
     {
         img: "daca.jpg",
         title:"Daca",
-        text:"Capital de Daca, con una población de 19.578 millones de personas (CDMX tiene 19.979 Mdp)"
+        text:"Capital es Daca, con una población de 19.578 millones de personas (CDMX tiene 19.979 Mdp)"
     },
     {
         img: "ubicacion.png",
