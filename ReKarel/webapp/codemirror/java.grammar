@@ -1,0 +1,83 @@
+@top Script  {
+    Class ProgramClass ScriptBlock
+}
+
+
+ScriptBlock {
+    Start inner End
+}
+
+inner {
+    Function* main
+}
+
+Function {
+    Define Identifier "("Identifier?")" Block 
+}
+
+main {
+    ProgramMain "(" ")" Block
+
+}
+
+Block {
+    Start InnerBlock End
+}
+
+InnerBlock {
+    expression*
+}
+
+expression {
+    call | Block | whileStatement | iterateStatement
+}
+
+call {
+    Identifier "("numeric?")"
+}
+
+numeric {
+    Identifier | Number 
+
+}
+
+whileStatement {
+    While "(" Identifier ")" expression
+}
+
+iterateStatement {
+    Iterate "(" numeric ")" expression
+}
+
+Start[closedBy="End"] {
+    start
+}
+
+End[openedBy="Start"] {
+    end
+}
+
+ProgramClass { program }
+ProgramMain { program }
+
+
+While { @specialize<Identifier, "while"> }
+If { @specialize<Identifier, "if"> }
+Else { @specialize<Identifier, "else"> }
+Iterate { @specialize<Identifier, "iterate"> }
+
+@tokens {
+  space { @whitespace+ }
+  Comment { "//" ![\n]* }
+  Class { "class" }
+  program { "program" }
+  Identifier { $[a-zA-Z]$[a-zA-Z0-9_]*}
+  Number { $[0-9]+ }
+  Define { "define"|"void" }
+  start { "{" }
+  end { "}" }
+
+
+}
+
+@skip { space | Comment }
