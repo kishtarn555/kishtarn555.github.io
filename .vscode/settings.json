@@ -1,4 +1,8 @@
 {
     "liveServer.settings.port": 5501,
-    "cSpell.language": "en,es-ES"
+    "cSpell.language": "en,es-ES",
+    "cSpell.words": [
+        "karel",
+        "Karel"
+    ]
 }
