@@ -5,3 +5,6 @@
 	path = ReKarel2
 	url = https://github.com/kishtarn555/ReKarel.git
 	branch = Array
+[submodule "ReKarelDev"]
+	path = ReKarelDev
+	url = https://github.com/kishtarn555/ReKarel.git
