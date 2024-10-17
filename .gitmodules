@@ -8,3 +8,6 @@
 [submodule "ReKarelDev"]
 	path = ReKarelDev
 	url = https://github.com/kishtarn555/ReKarel.git
+[submodule "rekareljuez"]
+	path = rekareljuez
+	url = https://github.com/kishtarn555/rekarelBrowserJudge.git
