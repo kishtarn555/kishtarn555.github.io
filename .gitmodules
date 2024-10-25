@@ -1,6 +1,3 @@
-[submodule "ReKarel"]
-	path = ReKarel
-	url = https://github.com/kishtarn555/ReKarel.git
 [submodule "ReKarel2"]
 	path = ReKarel2
 	url = https://github.com/kishtarn555/ReKarel.git
