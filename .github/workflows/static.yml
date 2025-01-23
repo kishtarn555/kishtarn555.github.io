@@ -39,6 +39,7 @@ jobs:
           cd ReKarelDev
           npm install
           npm run build
+          rm -rf node_modules
           cd ../..        
       - name: Setup Pages
         uses: actions/configure-pages@v5
