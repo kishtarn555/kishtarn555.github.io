@@ -28,16 +28,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '22'  # Adjust based on your app's requirements
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'  # Adjust based on your app's requirements
 
-    - name: Install and build submodule
-      run: |
-        cd ReKarelDev
-        npm install
-        npm run build
-        cd ../..
+      - name: Install and build submodule
+        run: |
+          cd ReKarelDev
+          npm install
+          npm run build
+          cd ../..        
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build
