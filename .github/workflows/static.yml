@@ -60,7 +60,7 @@ jobs:
 
           # ReKarelDev → subpath
           mkdir _site/ReKarelDev
-          cp -r ReKarelDev/dist/* _site/ReKarelDev/
+          cp -r ReKarelDev/webapp/* _site/ReKarelDev/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
