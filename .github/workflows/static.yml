@@ -34,7 +34,7 @@ jobs:
       - name: Build React (CRA)
         run: |
           cd reactwebsite
-          npm install
+          npm ci
           npm run build
           cd ..
 
@@ -44,7 +44,7 @@ jobs:
       - name: Build ReKarelDev
         run: |
           cd ReKarelDev
-          npm install
+          npm ci
           npm run build
           cd ..
 
