@@ -2,7 +2,7 @@ import { Navbar, Nav, Container, NavDropdown, Button, ButtonGroup } from "react-
 import { useLanguage } from "../../lang/languageContext";
 
 const MainNavbar: React.FC = () => {
-  const { t, loading, setLanguage, language } = useLanguage();
+  const { t, setLanguage, language } = useLanguage();
 
   return (
     <Navbar
