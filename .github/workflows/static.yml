@@ -58,6 +58,9 @@ jobs:
           # React app → root
           cp -r reactwebsite/build/* _site/
 
+          # SPA fallback          
+          cp -r _site/index.html _site/404.html
+
           # ReKarelDev → subpath
           mkdir _site/ReKarelDev
           cp -r ReKarelDev/webapp/* _site/ReKarelDev/

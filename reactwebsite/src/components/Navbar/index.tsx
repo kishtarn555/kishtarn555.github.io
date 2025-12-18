@@ -34,7 +34,7 @@ const MainNavbar: React.FC = () => {
                 aria-label="Selected language"
               >
                 <i className="bi bi-globe2" />{" "}
-                <span id="langLabel">{language} {t("nav.home")}</span>
+                <span id="langLabel">{language}</span>
               </Button>
 
               <NavDropdown
