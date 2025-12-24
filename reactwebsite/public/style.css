@@ -3,6 +3,10 @@
     background-image: url('/img/minicartel.jpg');
 }
 
+body {
+    background-color: #eaeaf0 !important;
+}
+
 
 .home-container .software-btn {
     background-image: url('/img/software.jpg');
