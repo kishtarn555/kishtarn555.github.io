@@ -19,41 +19,37 @@ const MainNavbar: React.FC = () => {
 
         <Navbar.Collapse id="mainNavbar">
           <Nav className="ms-auto mb-2 mb-lg-0">
-            <Nav.Link href="#home" active>
+            <Nav.Link href="/" active>
               {t("nav.home")}
             </Nav.Link>
             <Nav.Link href="/developer">Dev</Nav.Link>
             <Nav.Link href="/art">Art</Nav.Link>
           </Nav>
 
-          <div className="d-flex align-items-center">
-            <ButtonGroup className="ms-3 border">
-              <Button
-                variant="outline-secondary"
-                id="langBtn"
-                aria-label="Selected language"
-              >
+            <div className="d-flex align-items-center">
+            <NavDropdown
+              align="end"
+              id="langDropdown"
+              title={
+              <>
                 <i className="bi bi-globe2" />{" "}
-                <span id="langLabel">{language}</span>
-              </Button>
-
-              <NavDropdown
-                align="end"
-                title={<span className="visually-hidden">Toggle dropdown</span>}
-                id="langDropdown"    
-
-              >
-                <NavDropdown.Item onClick={()=>{ setLanguage("es") }}>
-                  ES — Español
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={()=>{ setLanguage("en") }}>
-                  EN — English
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={()=>{ setLanguage("ja") }}>
-                  日本語
-                </NavDropdown.Item>
-              </NavDropdown>
-            </ButtonGroup>
+                <span id="langLabel" className="ms-1">
+                {language}
+                </span>
+              </>
+              }
+              className="ms-3 border rounded ps-2 pe-2 pt-1 pb-1"
+            >
+              <NavDropdown.Item onClick={() => setLanguage("es")}>
+              ES — Español
+              </NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setLanguage("en")}>
+              EN — English
+              </NavDropdown.Item>
+              <NavDropdown.Item onClick={() => setLanguage("ja")}>
+              日本語
+              </NavDropdown.Item>
+            </NavDropdown>
           </div>
         </Navbar.Collapse>
       </Container>
