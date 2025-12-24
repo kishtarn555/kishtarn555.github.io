@@ -4,8 +4,8 @@ import { LanguageProvider } from './lang/languageContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
+import Developer from './pages/dev/projects';
 const Art = () => <div><Nav/>Art</div>;
-const Developer = () => <div><Nav/>Developer</div>;
 
 function App() {
   return (

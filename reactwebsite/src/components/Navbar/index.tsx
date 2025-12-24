@@ -16,7 +16,7 @@ const MainNavbar: React.FC = () => {
       bg="white"
       variant="light"
       sticky="top"
-      className="shadow-sm"
+      className="shadow-sm border-bottom"
     >
       <Container fluid>
         <Navbar.Brand href="#">Kishtarn</Navbar.Brand>
