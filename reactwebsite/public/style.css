@@ -8,8 +8,14 @@
     background-image: url('/img/software.jpg');
 }
 
+
+.home-container{
+    text-shadow: 2px 2px 4px #000000;
+}
+
 .home-container .name-box {
     z-index: 100;
+    pointer-events: none;
 }
 .home-container .art-btn:hover,.home-container .software-btn:hover {
     filter: brightness(60%) ;

@@ -27,9 +27,15 @@ const MainNavbar: React.FC = () => {
           <Nav className="ms-auto mb-2 mb-lg-0">
             <Nav.Link href="/" active>
               {t("nav.home")}
-            </Nav.Link>
-            <Nav.Link href="/developer">Dev</Nav.Link>
-            <Nav.Link href="/art">Art</Nav.Link>
+            </Nav.Link>            
+            <NavDropdown title="Developer" id="developerDropdown">
+              <NavDropdown.Item href="/developer">Projects</NavDropdown.Item>
+              <NavDropdown.Item href="/developer/competitive">Competitive programming</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Art" id="artDropdown">
+              <NavDropdown.Item href="/art">Gallery</NavDropdown.Item>
+              <NavDropdown.Item href="/art/commissions">Commissions</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
 
             <div className="d-flex align-items-center">
