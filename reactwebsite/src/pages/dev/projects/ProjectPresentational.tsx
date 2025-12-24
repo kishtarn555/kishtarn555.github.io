@@ -3,7 +3,10 @@ import Nav from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import { Card, Col, Row, Container } from "react-bootstrap";
 import { IRepresentationalProps } from "./types";
+import { useLanguage } from "../../../lang/languageContext";
 const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) => {
+    const { language } = useLanguage();
+  
   return (
     <>
       <Nav />
@@ -17,11 +20,13 @@ const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) =
 
           <Row>
             {projects.map((project, index) => (
-              <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+              <Col key={index} md={6} lg={4} className="mb-4">
                 <Card className="h-100 hover-effect">
                   <Card.Body>
                     <Card.Title>{project.title}</Card.Title>
-                    <Card.Text>{project.description}</Card.Text>
+                    <Card.Text className="advanced-truncate">
+                        {project.description[language] ?? project.description["en"]}
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

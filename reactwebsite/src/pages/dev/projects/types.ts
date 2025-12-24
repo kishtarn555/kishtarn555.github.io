@@ -1,7 +1,10 @@
 export type Project = {
     title: string;
-    description: string;
-    link: string;
+    description: {
+        "en": string;
+        [key: string]: string;
+    }
+    link?: string;
     imageUrl?: string;
 }
 
