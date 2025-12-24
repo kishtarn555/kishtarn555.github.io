@@ -1,6 +1,12 @@
 import { Navbar, Nav, Container, NavDropdown, Button, ButtonGroup } from "react-bootstrap";
 import { useLanguage } from "../../lang/languageContext";
 
+const languages = {
+  en: "English",
+  es: "Español",
+  ja: "日本語",
+}
+
 const MainNavbar: React.FC = () => {
   const { t, setLanguage, language } = useLanguage();
 
@@ -34,17 +40,17 @@ const MainNavbar: React.FC = () => {
               <>
                 <i className="bi bi-globe2" />{" "}
                 <span id="langLabel" className="ms-1">
-                {language}
+                {languages[language]}
                 </span>
               </>
               }
               className="ms-3 border rounded ps-2 pe-2 pt-1 pb-1"
             >
               <NavDropdown.Item onClick={() => setLanguage("es")}>
-              ES — Español
+              Español
               </NavDropdown.Item>
               <NavDropdown.Item onClick={() => setLanguage("en")}>
-              EN — English
+              English
               </NavDropdown.Item>
               <NavDropdown.Item onClick={() => setLanguage("ja")}>
               日本語
