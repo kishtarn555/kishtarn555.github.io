@@ -1,10 +1,11 @@
 import React from 'react';
 import Nav from '../../components/Navbar';
+import Footer from '../../components/Footer';
 const Home: React.FC = () => {
     return (
         <>
             <Nav/>
-            <main>
+            <main className="home-container">
                 <div className="d-block d-sm-none">
                     <h1>Hector Ricardez</h1>
                     <h2>Kishtarn</h2>
@@ -20,17 +21,18 @@ const Home: React.FC = () => {
                         className="col-xm-12 col-sm-6 bg-secondary h-xm-50 h-sm-100 d-flex flex-column align-items-center pb-4 pt-4 art-btn hover-effect text-decoration-none text-light"
                         href="art"
                     >
-                        <h3 data-l18n-key="home.artist">Artist</h3>
+                        <h3>Artist</h3>
                     </a>
 
                     <a
                         className="col-xm-12 col-sm-6 bg-primary h-xm-50 h-sm-100 d-flex flex-column align-items-center pb-4 pt-4 software-btn hover-effect text-decoration-none text-light"
                         href="developer"
                     >
-                        <h3 data-l18n-key="home.developer">Developer</h3>
+                        <h3>Developer</h3>
                     </a>
                 </div>
             </main>
+            <Footer/>
         </>
     );
 };

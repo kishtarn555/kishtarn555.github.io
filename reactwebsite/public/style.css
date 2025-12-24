@@ -1,0 +1,29 @@
+
+.home-container .art-btn {
+    background-image: url('/img/minicartel.jpg');
+}
+
+
+.home-container .software-btn {
+    background-image: url('/img/software.jpg');
+}
+
+.home-container .name-box {
+    z-index: 100;
+}
+.home-container .art-btn:hover,.home-container .software-btn:hover {
+    filter: brightness(60%) ;
+}
+
+.home-container .art-btn,.home-container .software-btn {
+    
+    background-size: cover !important;
+    background-position: center;
+    
+    transition: filter 0.3s ease;
+    z-index: 50;
+}
+
+.home-container .top-container {
+    min-height: 50vh;
+}
