@@ -19,7 +19,7 @@ const MainNavbar: React.FC = () => {
       className="shadow-sm border-bottom"
     >
       <Container fluid>
-        <Navbar.Brand href="#">Kishtarn</Navbar.Brand>
+        <Navbar.Brand href="/">Kishtarn</Navbar.Brand>
 
         <Navbar.Toggle aria-controls="mainNavbar" />
 
