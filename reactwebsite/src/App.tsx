@@ -1,3 +1,4 @@
+import './App.css';
 import Nav from "./components/Navbar";
 import { LanguageProvider } from './lang/languageContext';
 import { Routes, Route } from 'react-router-dom';

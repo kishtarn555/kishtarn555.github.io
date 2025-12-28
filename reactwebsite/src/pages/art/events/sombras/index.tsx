@@ -11,7 +11,7 @@ const Samo: React.FC = () => {
                     <h1>Sombras de Kishtarn</h1>
                     <h5>Exposición individual: <i>Hector Ricardez</i></h5>
                 </div>
-                <Row  style={{ height: '40vh', backgroundImage: 'url(/img/sombras.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <Row  className="sombras-banner">
                     <Row className="h-100">
                         <div className="col-2 col-sm-4 col-md-6"></div>
                         <div className="col-10 col-sm-8 col-md-6 d-flex flex-column justify-content-center align-items-center text-white">
