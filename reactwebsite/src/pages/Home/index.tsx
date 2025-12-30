@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import { Container, Row } from 'react-bootstrap';
+import ConstructionWarning from '../../components/warnings/construction';
 const Home: React.FC = () => {
     return (
         <>
@@ -32,12 +33,7 @@ const Home: React.FC = () => {
                         <h3>Developer</h3>
                     </a>
                 </div>
-
-                <Row className='p-4'>
-                    <Container className='bg-warning rounded'>
-                        This page is under construction, as such, many pages and links are broken. And translations are still in progress.
-                    </Container>
-                </Row>
+                <ConstructionWarning/>
             </main>
             <Footer/>
         </>

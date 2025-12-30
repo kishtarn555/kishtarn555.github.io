@@ -4,6 +4,7 @@ import Footer from "../../../components/Footer";
 import { Card, Col, Row, Container } from "react-bootstrap";
 import { IRepresentationalProps } from "./types";
 import { useLanguage } from "../../../lang/languageContext";
+import ConstructionWarning from "../../../components/warnings/construction";
 const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects }) => {
     const { language } = useLanguage();
   
@@ -12,7 +13,9 @@ const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects }) =
       <Nav />
       <main className="dev-container">
         <Container fluid className="m-4 border rounded p-2 w-auto bg-body shadow">
+          
           <h1>Gallery</h1>
+          <ConstructionWarning/>
           <hr></hr>
           <h2>Highlighted</h2>          
           <p>
