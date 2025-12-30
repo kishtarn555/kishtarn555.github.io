@@ -55,7 +55,6 @@ body {
 @media (min-width: 768px) {
     .sombras-banner {
         background-image: url('../public/img/sombras.jpg');
-        height: '40vh'; 
     }
 }
 .sombras-banner {

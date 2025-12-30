@@ -29,7 +29,7 @@ const Samo: React.FC = () => {
                 <Container fluid className="m-4 border rounded p-4 w-auto bg-body shadow text-justify">
                     <p>Sombras de Kishtarn es la primera exposición individual del artista emergente, Hector Ricardez.</p>
 
-                    <p>Esta serie reúne dibujos realizados en su nueva travesía como artista, explora con tinta y grafito los claros y oscuros</p>
+                    <p>Esta serie reúne dibujos realizados en su nueva travesía como artista, explora con tinta y grafito los claros y oscuros.</p>
 
 
                     <Row className="mt-4 pt-2">
@@ -50,7 +50,7 @@ const Samo: React.FC = () => {
                                     Costo: <b>Gratuito</b>
                                 </li>
                                 <li>
-                                    <b>Perks:</b> Se ofrecerán artículos gratuitos y con costo durante la inauguración
+                                    <b>Merch:</b> Se ofrecerán artículos gratuitos y con costo durante la inauguración
                                 </li>
                                 <li>
                                     <b>Compra:</b> Todas las obras estarán a la venta
