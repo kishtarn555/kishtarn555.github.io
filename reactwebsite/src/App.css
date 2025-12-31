@@ -50,13 +50,56 @@ body {
     .sombras-banner {
         background-image: url('../public/img/sombras2.jpg');
     }
+    
+    .gallery-photo {
+        max-height: 50vh;
+    }
 }
 
 @media (min-width: 768px) {
     .sombras-banner {
         background-image: url('../public/img/sombras.jpg');
     }
+    
+    .gallery-photo {
+        max-height: 30vh;
+    }
 }
+
+
+.gallery-photo {
+        object-fit: contain;        
+}
+
+.gallery-photo-container {
+    transition: filter 0.3s ease;
+    width: fit-content;
+
+}
+
+.gallery-photo-container:hover {
+    filter: brightness(50%);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.showcase-photo {
+    max-width: 100%;
+    object-fit: contain;  
+}
+
+.gallery-photo-container:hover .eye-icon {
+    opacity: 1;    
+    z-index: 5;
+}
+.eye-icon {
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 2rem;
+    color:white;
+    z-index: 10;
+}
+
 .sombras-banner {
     max-width: 100%;
     min-width: 100%;

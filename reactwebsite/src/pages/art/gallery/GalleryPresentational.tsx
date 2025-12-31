@@ -1,11 +1,11 @@
 import React from "react";
 import Nav from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import { Card, Col, Row, Container } from "react-bootstrap";
+import { Card, Col, Row, Container, Modal, Tooltip } from "react-bootstrap";
 import { IRepresentationalProps } from "./types";
 import { useLanguage } from "../../../lang/languageContext";
 import ConstructionWarning from "../../../components/warnings/construction";
-const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects }) => {
+const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, setSelectedWork, selectedWork }) => {
     const { language } = useLanguage();
   
   return (
@@ -24,10 +24,24 @@ const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects }) =
           <Row>
             {projects.map((project, index) => (
               <Col key={index} md={6} lg={4} className="mb-4">
-                <Card className="h-100 hover-effect">
+                <Card className="h-100 hover-effect border-0">
                   <Card.Body>
+                    <div className="text-center">
                     <Card.Title>{project.title[language] ?? project.title["en" ]}</Card.Title>
-                    <Card.Img src={project.previewUrl ?? project.imageUrl}></Card.Img>
+                        <div className="position-relative center-center w-100" >
+                          <div 
+                            className="gallery-photo-container  border rounded p-2 ms-auto me-auto"
+                            onClick={()=>setSelectedWork(project)}
+                          >
+                            <Card.Img src={project.previewUrl ?? project.imageUrl}
+                              className="gallery-photo w-auto" 
+                            />
+                            <div className="position-absolute top-50 start-50 translate-middle eye-icon" >
+                              <i className="bi bi-eye"></i>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                     <Card.Text className="advanced-truncate">
                         {project.description[language] ?? project.description["en"]}
                     </Card.Text>
@@ -39,6 +53,43 @@ const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects }) =
         </Container>
       </main>
       <Footer />
+
+      <Modal
+        show={selectedWork != null}
+        onHide={()=>setSelectedWork(undefined)}
+        size="lg"
+        
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedWork?.title?.[language] ?? selectedWork?.title?.["en"]}</Modal.Title></Modal.Header>
+        <Modal.Body>
+          <Row>
+            <Col>
+              <img
+                src={selectedWork?.previewUrl ?? selectedWork?.imageUrl}
+                className="showcase-photo"
+              />
+            </Col>
+            <Col>
+              <ul>
+                <li>
+                  <b>Year:</b> {selectedWork?.year ?? 'N/A'}
+                </li>
+                {/* <li>
+                  <b>Dimensions:</b> ?? x ?? cm
+                </li>
+                <li>
+                  <b>Technique:</b> Ink on paper
+                </li>
+                {selectedWork?.isBuyable && <li>
+                  <b>Price:</b> {selectedWork?.price ?? "TBD"} <a title="Not including shipping nor importation taxes">*</a>
+                </li>} */}
+              </ul>
+              {selectedWork?.description?.[language] ?? selectedWork?.description?.["en"]}
+            </Col>
+          </Row>
+        </Modal.Body>
+      </Modal>
     </>
   );
 };
