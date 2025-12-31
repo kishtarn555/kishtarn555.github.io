@@ -1,7 +1,6 @@
 import React from 'react';
 import Nav from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import { Container, Row } from 'react-bootstrap';
 import ConstructionWarning from '../../components/warnings/construction';
 const Home: React.FC = () => {
     return (

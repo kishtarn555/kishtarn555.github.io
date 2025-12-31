@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import { Card, Col, Row, Container, Modal, Tooltip } from "react-bootstrap";
+import { Card, Col, Row, Container, Modal } from "react-bootstrap";
 import { IRepresentationalProps } from "./types";
 import { useLanguage } from "../../../lang/languageContext";
 import ConstructionWarning from "../../../components/warnings/construction";
@@ -67,6 +67,7 @@ const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, set
             <Col>
               <img
                 src={selectedWork?.previewUrl ?? selectedWork?.imageUrl}
+                alt={"Drawing picture"}
                 className="showcase-photo"
               />
             </Col>
