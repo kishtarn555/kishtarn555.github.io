@@ -67,7 +67,7 @@ const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, set
             <Col>
               <img
                 src={selectedWork?.previewUrl ?? selectedWork?.imageUrl}
-                alt={"Drawing picture"}
+                alt={"Drawing"}
                 className="showcase-photo"
               />
             </Col>
