@@ -34,7 +34,7 @@ const MainNavbar: React.FC = () => {
             </NavDropdown>
             <NavDropdown title="Art" id="artDropdown">
               <NavDropdown.Item href="/art">Gallery</NavDropdown.Item>
-              <NavDropdown.Item href="/art/commissions">Commissions</NavDropdown.Item>
+              {/* <NavDropdown.Item href="/art/commissions">Commissions</NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
 
