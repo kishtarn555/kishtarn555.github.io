@@ -69,11 +69,13 @@ body {
 
 .gallery-photo {
         object-fit: contain;        
+        max-width: 100%;
 }
 
 .gallery-photo-container {
     transition: filter 0.3s ease;
     width: fit-content;
+    max-width: 100%;
 
 }
 
