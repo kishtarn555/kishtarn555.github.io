@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from '../../../../components/Navbar';
 import Footer from '../../../../components/Footer';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 const Samo: React.FC = () => {
+    const [showFull, setShowFull] = useState<boolean>(false);
     return (
         <>
             <Nav/>
@@ -15,7 +16,7 @@ const Samo: React.FC = () => {
                     <Row className="h-100">
                         <div className="col-2 col-sm-4 col-md-6"></div>
                         <div className="col-10 col-sm-8 col-md-6 d-flex flex-column justify-content-center align-items-center text-white">
-                            <h2>10 de Enero 4:00 PM</h2>
+                            <h2>Este sábado, 10 de Enero 4:00 PM</h2>
                             <a 
                                 className="btn btn-light" href='https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmdkZXZwNm01YzZzbW5uajkwM2VucXZ1OWgga2lzaHRhcm41NTVAbQ&tmsrc=kishtarn555%40gmail.com' 
                                 
@@ -27,11 +28,56 @@ const Samo: React.FC = () => {
                     </Row>
                 </Row>
                 <Container fluid className="m-4 border rounded p-4 w-auto bg-body shadow text-justify">
-                    <p>Sombras de Kishtarn es la primera exposición individual del artista emergente, Hector Ricardez.</p>
-
-                    <p>Esta serie reúne dibujos realizados en su nueva travesía como artista, explora con tinta y grafito los claros y oscuros.</p>
-
-
+                    <p>
+                        Primera exposición individual de Héctor “Kishtarn” Ricárdez, quien desde joven
+                        participó en olimpiadas de la ciencia, incluida la Olimpiada Internacional de
+                        Informática. De esa formación surge un método basado en la repetición, la
+                        experimentación y la falta de miedo a la aventura, que atraviesa su manera de
+                        construir imagen.
+                    </p>
+                    { showFull ? (
+                        <>
+                            <p>
+                                Este trasfondo lo ha llevado a Japón, Italia, Reino Unido, Estados Unidos, Irán,
+                                Azerbaiyán, Bangladesh, Egipto y diversas regiones de la república mexicana,
+                                ampliando un imaginario que se alimenta de estos movimientos y sus reflexiones.
+                            </p>
+                            <p>
+                                Las obras reunidas aquí funcionan como fragmentos de un imaginario propio en
+                                construcción. Son exploraciones que utilizan la forma, la luz y la sombra como
+                                bloques estructurales, mostrando el trabajo temprano de un artista emergente que
+                                no busca conclusiones, sino la consolidación de un lenguaje.
+                            </p>
+                            <p>
+                                La exposición habla de lo que habita entre las sombras, de aquello que se oculta en
+                                las grietas. Se despliega un universo donde lo místico y lo fantástico se filtran hacia
+                                lo cotidiano, insinuando que incluso lo más común carga historias invisibles. Aquí,
+                                las sombras no persiguen a la imagen: la narran y la construyen.
+                            </p>
+                            <p className="text-end">- Fer Ricárdez, 2026</p>
+                            
+                            <Button 
+                                className='btn-secondary'
+                                onClick={() => setShowFull(false)}
+                            >
+                                Mostrar menos
+                            </Button>
+                        </>):
+                        (
+                            <>
+                                <p>
+                                    Las obras reunidas aquí funcionan como fragmentos de un imaginario propio en<b>...</b>
+                                </p>
+                                <p className="text-end">- Fer Ricárdez, 2026</p>
+                                <Button 
+                                    onClick={() => setShowFull(true)}
+                                    >
+                                    Mostrar más
+                                </Button>
+                            </>
+                        )
+                    }
+                    <hr></hr>
                     <Row className="mt-4 pt-2">
                         <Col xs="12" md="6" xl="7">                        
                             <h4>Evento</h4>
@@ -66,10 +112,11 @@ const Samo: React.FC = () => {
                              ></iframe>
                         </Col>
                     </Row>
+                    <hr></hr>
                     <Row>
                         <h4>Catálogo</h4>
                         <div className="ms-4 me-4">
-                            Revelado el Jueves, 5 de Enero
+                            Revelado el Jueves, 9 de Enero
                         </div>
                     </Row>
                 </Container>
