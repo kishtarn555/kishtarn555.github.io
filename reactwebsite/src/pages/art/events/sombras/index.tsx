@@ -32,11 +32,7 @@ const CONTENT: Work[] = [
   }),
   Coffee,
   Lunaccino,
-  modifyWork(StillRememberYou, {
-    isBuyable: true,
-    price: "1000 MXN",
-    sold: true,
-  }),
+  StillRememberYou,
   InvitingPumpkin,
   Candle,
   Bone,

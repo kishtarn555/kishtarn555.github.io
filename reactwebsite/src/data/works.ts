@@ -33,7 +33,8 @@ export const StillRememberYou: Work = {
         "en": ""
     },
     isBuyable: true,
-        
+    sold: true,
+    price: "600 MXN",        
     link: "/projects/project1"
 };
 
@@ -52,6 +53,7 @@ export const Rite: Work = {
     },
         
     isBuyable: true,
+    price: "600 MXN",
     link: "/projects/project1"
 };
 
@@ -178,7 +180,8 @@ export const Candle: Work = {
         "en": "",
     },
         
-    isBuyable: false,
+    isBuyable: true,
+    price: "500 MXN",
     link: "/projects/project1"
 };
 

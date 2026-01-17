@@ -36,6 +36,9 @@ const WorkModal: React.FC<WorkModalProps> = ({ selectedWork, onCloseModal }) => 
                 <li>
                   <b>Year:</b> {selectedWork?.year ?? "N/A"}
                 </li>
+                {selectedWork.isBuyable && <li>
+                  <b>Price:</b> {selectedWork.sold? <><s>{selectedWork.price}</s> (sold)</>: selectedWork.price}
+                </li>}
                 {/* <li>
                     <b>Dimensions:</b> ?? x ?? cm
                   </li>
