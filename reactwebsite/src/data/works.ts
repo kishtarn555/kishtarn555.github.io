@@ -13,11 +13,13 @@ export const CloseTheThirdEye: Work = {
     previewUrl: "/img/art/third_eye_low.jpg",
 
     description: {
-        "en": ""
+        "en": "This is both a reference to the fact that the artist needs to draw objects how they really look like, instead of the image he has in his mind. But it also resonates with how we often ignore the facts and only look from our believes leading to a bias look of the world.",
+        "es": "Esta es una referencia tanto de como él artista necesita dibujar los objetos como realmente se ven y no como la imagen que el tiene en su mente. Pero también rima con el hecho de que seguido ignoramos los hechos y vemos solo desde nuestras creencias, lo que termina en una vista sesgada del mundo.",
     },
         
     link: "/projects/project1",
     isBuyable: true,
+    price: "1000 MXN",
     dimensions: [30, 30]
 };
 export const StillRememberYou: Work = {
@@ -344,7 +346,7 @@ export const PanDeMuerto25Color: Work =  {
         "en": ""
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
     dimensions: [13, 18]
@@ -506,7 +508,7 @@ export const ScaryPumpkin: Work =  {
         "en": ""
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "600 MXN",
     link: "/projects/project1",
     dimensions: [11, 11]

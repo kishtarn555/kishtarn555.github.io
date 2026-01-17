@@ -1,10 +1,11 @@
 import React from "react";
 import Nav from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import { Card, Col, Row, Container, Modal } from "react-bootstrap";
+import { Card, Col, Row, Container } from "react-bootstrap";
 import { IRepresentationalProps } from "./types";
 import { useLanguage } from "../../../lang/languageContext";
 import ConstructionWarning from "../../../components/warnings/construction";
+import WorkModal from "../../../components/ArtGallery/workModal";
 const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, setSelectedWork, selectedWork }) => {
   const { language } = useLanguage();
   
@@ -54,43 +55,10 @@ const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, set
       </main>
       <Footer />
 
-      <Modal
-        show={selectedWork != null}
-        onHide={()=>setSelectedWork(undefined)}
-        size="lg"
-        
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedWork?.title?.[language] ?? selectedWork?.title?.["en"]}</Modal.Title></Modal.Header>
-        <Modal.Body>
-          <Row>
-            <Col>
-              <img
-                src={selectedWork?.previewUrl ?? selectedWork?.imageUrl}
-                alt={"Drawing"}
-                className="showcase-photo"
-              />
-            </Col>
-            <Col>
-              <ul>
-                <li>
-                  <b>Year:</b> {selectedWork?.year ?? 'N/A'}
-                </li>
-                {/* <li>
-                  <b>Dimensions:</b> ?? x ?? cm
-                </li>
-                <li>
-                  <b>Technique:</b> Ink on paper
-                </li>
-                {selectedWork?.isBuyable && <li>
-                  <b>Price:</b> {selectedWork?.price ?? "TBD"} <a title="Not including shipping nor importation taxes">*</a>
-                </li>} */}
-              </ul>
-              {selectedWork?.description?.[language] ?? selectedWork?.description?.["en"]}
-            </Col>
-          </Row>
-        </Modal.Body>
-      </Modal>
+     <WorkModal
+        selectedWork={selectedWork}
+        onCloseModal={()=>setSelectedWork(null)}
+      />
     </>
   );
 };

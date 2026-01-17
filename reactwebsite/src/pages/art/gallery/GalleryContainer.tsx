@@ -14,7 +14,7 @@ const CONTENT: Work[] = [
 ]
 
 const GalleryContainer: React.FC = () => {
-  const [selectedWork, setSelectedWork] = useState<Work | undefined>();
+  const [selectedWork, setSelectedWork] = useState<Work | null>(null);
 
   return <GalleryPresentational
     projects={CONTENT}
