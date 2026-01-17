@@ -8,11 +8,13 @@ interface WorkGalleryProps {
     workList: Work[];
     onWorkClick?: (index: number, work: Work) => void;
     language?: string;
+    showDescription?: boolean;
 }
 
 export const ProjectGallery: React.FC<WorkGalleryProps> = ({
     workList: projectList,
-    onWorkClick: onProjectClick
+    onWorkClick: onProjectClick,
+    showDescription = true
 }) => {
     const {language} = useLanguage();
     return (
@@ -38,9 +40,9 @@ export const ProjectGallery: React.FC<WorkGalleryProps> = ({
                                     </div>
                                 </div>
                             </div>
-                            <Card.Text className="text-truncate">
+                            {showDescription && <Card.Text className="text-truncate">
                                 {project.description[language] ?? project.description['en']}
-                            </Card.Text>
+                            </Card.Text>}
                         </Card.Body>
                     </Card>
                 </Col>

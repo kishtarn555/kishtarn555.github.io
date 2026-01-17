@@ -13,7 +13,7 @@ export const CloseTheThirdEye: Work = {
     previewUrl: "/img/art/third_eye_low.jpg",
 
     description: {
-        "en": "This is both a reference to the fact that the artist needs to draw objects how they really look like, instead of the image he has in his mind. But it also resonates with how we often ignore the facts and only look from our believes leading to a bias look of the world.",
+        "en": "This is both a reference to the fact that the artist needs to draw objects how they really look like, instead of the image he has in his mind. But it also resonates with how we often ignore the facts and only look from our believes leading to a biased look of the world.",
         "es": "Esta es una referencia tanto de como él artista necesita dibujar los objetos como realmente se ven y no como la imagen que el tiene en su mente. Pero también rima con el hecho de que seguido ignoramos los hechos y vemos solo desde nuestras creencias, lo que termina en una vista sesgada del mundo.",
     },
         

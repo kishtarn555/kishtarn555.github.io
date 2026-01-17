@@ -1,13 +1,12 @@
 import React from "react";
 import Nav from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import { Card, Col, Row, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { IRepresentationalProps } from "./types";
-import { useLanguage } from "../../../lang/languageContext";
 import ConstructionWarning from "../../../components/warnings/construction";
 import WorkModal from "../../../components/ArtGallery/workModal";
+import { ProjectGallery } from "../../../components/ArtGallery";
 const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, setSelectedWork, selectedWork }) => {
-  const { language } = useLanguage();
   
   return (
     <>
@@ -22,35 +21,12 @@ const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, set
           <p>
             Watch some of my selected works.
           </p>
-          <Row>
-            {projects.map((project, index) => (
-              <Col key={index} md={6} lg={4} className="mb-4">
-                <Card className="h-100 hover-effect border-0">
-                  <Card.Body>
-                    <div className="text-center">
-                    <Card.Title>{project.title[language] ?? project.title["en" ]}</Card.Title>
-                        <div className="position-relative center-center w-100" >
-                          <div 
-                            className="gallery-photo-container  border rounded p-2 ms-auto me-auto"
-                            onClick={()=>setSelectedWork(project)}
-                          >
-                            <Card.Img src={project.previewUrl ?? project.imageUrl}
-                              className="gallery-photo w-auto" 
-                            />
-                            <div className="position-absolute top-50 start-50 translate-middle eye-icon" >
-                              <i className="bi bi-eye"></i>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <Card.Text className="advanced-truncate">
-                        {project.description[language] ?? project.description["en"]}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
+            <ProjectGallery
+              workList={projects}
+              showDescription={false}
+              onWorkClick={(_, work)=>setSelectedWork(work)}
+
+            />
         </Container>
       </main>
       <Footer />
