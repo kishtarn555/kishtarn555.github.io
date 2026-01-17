@@ -349,7 +349,8 @@ export const PanDeMuerto25Color: Work =  {
     isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
-    dimensions: [13, 18]
+    dimensions: [2859, 2859],
+    dimensionsUnit: "px"
 };
 
 
