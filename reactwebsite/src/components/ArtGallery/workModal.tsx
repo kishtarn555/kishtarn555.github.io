@@ -9,7 +9,7 @@ interface WorkModalProps {
 }
 
 const WorkModal: React.FC<WorkModalProps> = ({ selectedWork, onCloseModal }) => {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   return (
     <Modal
       show={selectedWork != null}
@@ -33,11 +33,15 @@ const WorkModal: React.FC<WorkModalProps> = ({ selectedWork, onCloseModal }) => 
             </Col>
             <Col>
               <ul>
+                
                 <li>
-                  <b>Year:</b> {selectedWork?.year ?? "N/A"}
+                  <b>{t('work.dimensions')}:</b> {selectedWork.dimensions[0]} x {selectedWork.dimensions[1]} {selectedWork.dimensionsUnit ?? "cm"} 
+                </li>
+                <li>
+                  <b>{t('work.year')}:</b> {selectedWork?.year ?? "N/A"}
                 </li>
                 {selectedWork.isBuyable && <li>
-                  <b>Price:</b> {selectedWork.sold? <><s>{selectedWork.price}</s> (sold)</>: selectedWork.price}
+                  <b>{t('work.price')}:</b> {selectedWork.sold? <><s>{selectedWork.price}</s> {t('work.sold')}</>: selectedWork.price}
                 </li>}
                 {/* <li>
                     <b>Dimensions:</b> ?? x ?? cm

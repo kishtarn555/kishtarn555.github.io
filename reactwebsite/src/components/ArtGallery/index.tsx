@@ -38,7 +38,7 @@ export const ProjectGallery: React.FC<WorkGalleryProps> = ({
                                     </div>
                                 </div>
                             </div>
-                            <Card.Text className="advanced-truncate">
+                            <Card.Text className="text-truncate">
                                 {project.description[language] ?? project.description['en']}
                             </Card.Text>
                         </Card.Body>

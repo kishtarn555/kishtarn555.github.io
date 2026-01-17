@@ -3,6 +3,11 @@
     "home.artist": "Artista",
     "home.latest_updates": "Últimas Actualizaciones",
     "nav.home": "Inicio",
-    "construction.warning": "Este sitio se encuentra en construcción, por lo que varias páginas aún no están terminadas y varios enlaces no funcionan."
+    "construction.warning": "Este sitio se encuentra en construcción, por lo que varias páginas aún no están terminadas y varios enlaces no funcionan.",
+    "work.year": "Año",
+    "work.price": "Precio",
+    "work.technique": "Técnica",
+    "work.dimensions": "Dimensiones",
+    "work.sold": "(Vendido)"
 
 }

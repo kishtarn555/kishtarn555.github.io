@@ -18,10 +18,11 @@ export const CloseTheThirdEye: Work = {
         
     link: "/projects/project1",
     isBuyable: true,
+    dimensions: [30, 30]
 };
 export const StillRememberYou: Work = {
     title: {
-        "es": "Todavía te recuerdo",
+        "es": "Aún te recuerdo",
         "en": "I still remember you",
         "ja": "君をまだ覚えている"
     },
@@ -35,7 +36,8 @@ export const StillRememberYou: Work = {
     isBuyable: true,
     sold: true,
     price: "600 MXN",        
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [13, 21]
 };
 
 export const Rite: Work = {
@@ -54,11 +56,12 @@ export const Rite: Work = {
         
     isBuyable: true,
     price: "600 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [20, 18]
 };
 
 
-export const EmergentCia = {
+export const EmergentCia: Work = {
     title: {
         en: 'Emergent.cia',
         es: 'Emergent.cia',
@@ -71,7 +74,8 @@ export const EmergentCia = {
     imageUrl: '/img/art/emergentcia_low.jpg',
     isBuyable: true,
     price: '1000 MXN',
-    sold:true
+    sold:true,
+    dimensions: [50, 36]
 }
 
 //#region INKTOBER SAMO 2025
@@ -91,7 +95,8 @@ export const Coffee: Work =  {
         
     isBuyable: true,
     price: "500 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [22, 30]
 };
 
 export const InvitingPumpkin: Work =  {
@@ -109,7 +114,8 @@ export const InvitingPumpkin: Work =  {
         
     isBuyable: true,
     price: "600 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [30, 22]
 };
 
 export const Lunaccino: Work = {
@@ -128,7 +134,8 @@ export const Lunaccino: Work = {
         
     isBuyable: true,
     price: "400 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [22, 18]
 };
 
 
@@ -146,7 +153,8 @@ export const Magia: Work = {
     },
         
     isBuyable: false,
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [11, 11]
 };
 
 export const CatInCustoms: Work = {
@@ -164,7 +172,8 @@ export const CatInCustoms: Work = {
     },
         
     isBuyable: false,
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [11, 11]
 };
 
 export const Candle: Work = {
@@ -182,7 +191,8 @@ export const Candle: Work = {
         
     isBuyable: true,
     price: "500 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [21, 26]
 };
 
 export const Bone: Work = {
@@ -200,7 +210,8 @@ export const Bone: Work = {
         
     isBuyable: true,
     price: "400 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [20, 26]
 };
 
 
@@ -219,7 +230,8 @@ export const Hearth: Work = {
         
     isBuyable: true,
     price: "400 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [25, 21]
 };
 
 export const Cempasutchil: Work = {
@@ -236,7 +248,8 @@ export const Cempasutchil: Work = {
     },
         
     isBuyable: false,
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [11, 11]
 };
 
 export const Ghost: Work = {
@@ -254,7 +267,8 @@ export const Ghost: Work = {
         
     isBuyable: true,
     price: "400 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [25, 22]
 };
 
 export const Star: Work = {
@@ -272,7 +286,8 @@ export const Star: Work = {
         
     isBuyable: true,
     price: "400 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [11, 11]
 };
 
 export const ColdCoffee: Work = {
@@ -291,7 +306,8 @@ export const ColdCoffee: Work = {
     isBuyable: true,
     price: "400 MXN",
     sold: true,
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [11, 11]
 };
 export const Altar: Work = {
     title: {
@@ -309,7 +325,8 @@ export const Altar: Work = {
     isBuyable: false,
     price: "400 MXN",
     sold: true,
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [11, 11]
 };
 
 
@@ -330,6 +347,7 @@ export const PanDeMuerto25Color: Work =  {
     isBuyable: true,
     price: "400 MXN",
     link: "/projects/project1",
+    dimensions: [13, 18]
 };
 
 
@@ -349,6 +367,7 @@ export const PanDeMuerto25BW: Work =  {
     isBuyable: true,
     price: "400 MXN",
     link: "/projects/project1",
+    dimensions: [13, 18]
 };
 
 export const Snek: Work =  {
@@ -367,6 +386,7 @@ export const Snek: Work =  {
     isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
+    dimensions: [11, 11]
 };
 
 export const Shadow: Work =  {
@@ -385,6 +405,7 @@ export const Shadow: Work =  {
     isBuyable: true,
     price: "500 MXN",
     link: "/projects/project1",
+    dimensions: [21, 20]
 };
 
 
@@ -405,6 +426,7 @@ export const Plant: Work =  {
     isBuyable: true,
     price: "500 MXN",
     link: "/projects/project1",
+    dimensions: [30, 22]
 };
 
 export const Eye: Work =  {
@@ -423,6 +445,7 @@ export const Eye: Work =  {
     isBuyable: true,
     price: "500 MXN",
     link: "/projects/project1",
+    dimensions: [30, 22]
 };
 
 export const Butterfly: Work =  {
@@ -441,6 +464,7 @@ export const Butterfly: Work =  {
     isBuyable: false,
     price: "500 MXN",
     link: "/projects/project1",
+    dimensions: [11, 11]
 };
 
 export const Clock: Work =  {
@@ -459,6 +483,7 @@ export const Clock: Work =  {
     isBuyable: false,
     price: "500 MXN",
     link: "/projects/project1",
+    dimensions: [11, 11]
 };
 
 
@@ -483,7 +508,8 @@ export const ScaryPumpkin: Work =  {
         
     isBuyable: true,
     price: "600 MXN",
-    link: "/projects/project1"
+    link: "/projects/project1",
+    dimensions: [11, 11]
 };
 //#endregion
 

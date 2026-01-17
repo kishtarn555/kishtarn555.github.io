@@ -7,6 +7,8 @@ export type Work = {
         "en": string;
         [key: string]: string;
     }
+    dimensions: [number, number];
+    dimensionsUnit?: string;
     year?: number;
     price?: string;
     link?: string;
