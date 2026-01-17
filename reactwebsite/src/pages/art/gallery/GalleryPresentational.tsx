@@ -6,7 +6,7 @@ import { IRepresentationalProps } from "./types";
 import { useLanguage } from "../../../lang/languageContext";
 import ConstructionWarning from "../../../components/warnings/construction";
 const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, setSelectedWork, selectedWork }) => {
-    const { language } = useLanguage();
+  const { language } = useLanguage();
   
   return (
     <>
