@@ -62,13 +62,8 @@ const Samo: React.FC = () => {
           <Row className="h-100">
             <div className="col-2 col-sm-4 col-md-6"></div>
             <div className="col-10 col-sm-8 col-md-6 d-flex flex-column justify-content-center align-items-center text-white">
-              <h2>Este sábado, 10 de Enero 4:00 PM</h2>
-              <a
-                className="btn btn-light"
-                href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmdkZXZwNm01YzZzbW5uajkwM2VucXZ1OWgga2lzaHRhcm41NTVAbQ&tmsrc=kishtarn555%40gmail.com"
-              >
-                <i className="bi bi-calendar-date-fill"></i> Añadir a calendario
-              </a>
+              <h2>Del 10 al 25 de Enero</h2>
+              
               <h5>
                 <a
                   href="https://maps.app.goo.gl/Z5jQPWFaZdnyRt7DA"
