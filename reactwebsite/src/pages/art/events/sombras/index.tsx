@@ -149,17 +149,7 @@ const Samo: React.FC = () => {
                 </li>
 
                 <li>
-                  <b>Fecha: </b>Sábado 10 de Enero, 4:00 PM.
-                </li>
-                <li>
-                  Costo: <b>Gratuito</b>
-                </li>
-                <li>
-                  <b>Merch:</b> Se ofrecerán artículos gratuitos y con costo
-                  durante la inauguración
-                </li>
-                <li>
-                  <b>Compra:</b> Todas las obras estarán a la venta
+                  <b>Fecha: </b>Hasta el 25 de Enero.
                 </li>
               </ul>
             </Col>
