@@ -149,7 +149,7 @@ const Samo: React.FC = () => {
                 </li>
 
                 <li>
-                  <b>Fecha: </b>Hasta el 25 de Enero.
+                  <b>Fecha: </b>Del 10 al 25 de Enero.
                 </li>
               </ul>
             </Col>
