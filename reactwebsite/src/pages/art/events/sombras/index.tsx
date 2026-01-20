@@ -62,7 +62,7 @@ const Samo: React.FC = () => {
           <Row className="h-100">
             <div className="col-2 col-sm-4 col-md-6"></div>
             <div className="col-10 col-sm-8 col-md-6 d-flex flex-column justify-content-center align-items-center text-white">
-              <h2>Del 10 al 25 de Enero</h2>
+              <h2>Del 10 al 31 de Enero</h2>
               
               <h5>
                 <a
@@ -144,7 +144,7 @@ const Samo: React.FC = () => {
                 </li>
 
                 <li>
-                  <b>Fecha: </b>Del 10 al 25 de Enero.
+                  <b>Fecha: </b>Del 10 al 31 de Enero.
                 </li>
               </ul>
             </Col>
