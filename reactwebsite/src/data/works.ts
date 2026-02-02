@@ -1,4 +1,5 @@
 import { Work } from "../common/types";
+import { DigitalColor, InkOnPaper, PencilOnPapel, WhiteCharcoal } from "./techniques";
 
 // Because we hate paying for databases
 
@@ -8,6 +9,7 @@ export const CloseTheThirdEye: Work = {
         "en": "Close the third eye",
         "ja": "三つ目の目を閉じて"
     },
+    technique: PencilOnPapel,
     year: 2025,
     imageUrl: "/img/art/third_eye.jpg",
     previewUrl: "/img/art/third_eye_low.jpg",
@@ -18,7 +20,7 @@ export const CloseTheThirdEye: Work = {
     },
         
     link: "/projects/project1",
-    isBuyable: true,
+    isBuyable: false,
     price: "1000 MXN",
     dimensions: [30, 30]
 };
@@ -28,14 +30,17 @@ export const StillRememberYou: Work = {
         "en": "I still remember you",
         "ja": "君をまだ覚えている"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/still_remember.jpg",
     previewUrl: "/img/art/still_remember_low.jpg",
 
     description: {
-        "en": ""
+        "en": "In honour of my late dog, drawn during Day of the Dead",
+        "es": "En honor de mi perro fallecido, que en paz descanse. Dibujado durante el Día de los muertos",
+        "ja": "亡くなった犬に。死者の日に描きました"
     },
-    isBuyable: true,
+    isBuyable: false,
     sold: true,
     price: "600 MXN",        
     link: "/projects/project1",
@@ -48,6 +53,7 @@ export const Rite: Work = {
         "en": "Rite",
         "ja": "Rite" //TODO: Proper translation
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/rito.jpg",
     previewUrl: "/img/art/rito_low.jpg",
@@ -56,7 +62,7 @@ export const Rite: Work = {
         "en": ""
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "600 MXN",
     link: "/projects/project1",
     dimensions: [20, 18]
@@ -72,9 +78,10 @@ export const EmergentCia: Work = {
         en: 'This drawing showcases the beginning of an artist voyage, lifting their art from the anonymity.',
         es: 'Este dibujo capta el inicio del viaje de un artista, levantando su arte desde el anonimato.',
     },
+    technique: WhiteCharcoal,
     year: 2026,
     imageUrl: '/img/art/emergentcia_low.jpg',
-    isBuyable: true,
+    isBuyable: false,
     price: '1000 MXN',
     sold:true,
     dimensions: [50, 36]
@@ -88,6 +95,7 @@ export const Coffee: Work =  {
         "en": "Coffee",
         "ja": "コーヒー"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/coffee.jpg",
 
@@ -95,7 +103,7 @@ export const Coffee: Work =  {
         "en": ""
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "500 MXN",
     link: "/projects/project1",
     dimensions: [22, 30]
@@ -107,6 +115,7 @@ export const InvitingPumpkin: Work =  {
         "en": "Pumpkin",
         "ja": "カボチャ"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/pumpkin.jpg",
 
@@ -114,7 +123,7 @@ export const InvitingPumpkin: Work =  {
         "en": ""
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "600 MXN",
     link: "/projects/project1",
     dimensions: [30, 22]
@@ -126,6 +135,7 @@ export const Lunaccino: Work = {
         "en": "Lunaccino",
         "ja": "Lunaccino"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/lunaccino.jpg",
     previewUrl: "/img/art/lunaccino_low.jpg",
@@ -134,7 +144,7 @@ export const Lunaccino: Work = {
         "en": ""
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
     dimensions: [22, 18]
@@ -147,6 +157,7 @@ export const Magia: Work = {
         "en": "Magic",
         "ja": "魔法"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/magic.jpg",
 
@@ -165,6 +176,7 @@ export const CatInCustoms: Work = {
         "en": "Cat in customs (ft. Nikita)",
         "ja": "税関 の猫"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/catcustoms.jpg",
 
@@ -184,6 +196,7 @@ export const Candle: Work = {
         "en": "Candle",
         "ja": "蝋燭"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/candle.jpg",
 
@@ -191,7 +204,7 @@ export const Candle: Work = {
         "en": "",
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "500 MXN",
     link: "/projects/project1",
     dimensions: [21, 26]
@@ -203,6 +216,7 @@ export const Bone: Work = {
         "en": "Bone",
         "ja": "骨"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/bone.jpg",
 
@@ -210,7 +224,7 @@ export const Bone: Work = {
         "en": "",
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
     dimensions: [20, 26]
@@ -223,6 +237,7 @@ export const Hearth: Work = {
         "en": "Hearth",
         "ja": "心臓"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/hearth.jpg",
 
@@ -230,7 +245,7 @@ export const Hearth: Work = {
         "en": "",
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
     dimensions: [25, 21]
@@ -242,6 +257,7 @@ export const Cempasutchil: Work = {
         "en": "Cempasúchil",
         "ja": "センジュギク"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/hearth.jpg",
 
@@ -260,6 +276,7 @@ export const Ghost: Work = {
         "en": "Ghost",
         "ja": "ゴースト"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/ghost.jpg",
 
@@ -267,7 +284,7 @@ export const Ghost: Work = {
         "en": "",
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
     dimensions: [25, 22]
@@ -279,6 +296,7 @@ export const Star: Work = {
         "en": "Star",
         "ja": "星"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/star.jpg",
 
@@ -286,7 +304,7 @@ export const Star: Work = {
         "en": "",
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
     dimensions: [11, 11]
@@ -304,8 +322,8 @@ export const ColdCoffee: Work = {
     description: {
         "en": "",
     },
-        
-    isBuyable: true,
+    technique: InkOnPaper,        
+    isBuyable: false,
     price: "400 MXN",
     sold: true,
     link: "/projects/project1",
@@ -317,6 +335,7 @@ export const Altar: Work = {
         "en": "Altar",
         "ja": "祭壇"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/altar.jpg",
 
@@ -338,6 +357,7 @@ export const PanDeMuerto25Color: Work =  {
         "en": "Pan de muerto",
         "ja": "Pan de muerto"
     },
+    technique: DigitalColor,
     year: 2025,
     imageUrl: "/img/art/pan_de_muerto.jpg",
     previewUrl: "/img/art/pan_de_muerto_low.jpg",
@@ -366,8 +386,8 @@ export const PanDeMuerto25BW: Work =  {
     description: {
         "en": ""
     },
-        
-    isBuyable: true,
+    technique: InkOnPaper,        
+    isBuyable: false,
     price: "400 MXN",
     link: "/projects/project1",
     dimensions: [13, 18]
@@ -385,6 +405,7 @@ export const Snek: Work =  {
     description: {
         "en": ""
     },
+    technique: InkOnPaper,
         
     isBuyable: false,
     price: "400 MXN",
@@ -398,6 +419,7 @@ export const Shadow: Work =  {
         "en": "Shade",
         "ja": "影"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/shade.jpg",
 
@@ -405,7 +427,7 @@ export const Shadow: Work =  {
         "en": ""
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "500 MXN",
     link: "/projects/project1",
     dimensions: [21, 20]
@@ -425,8 +447,9 @@ export const Plant: Work =  {
     description: {
         "en": ""
     },
+    technique: InkOnPaper,
         
-    isBuyable: true,
+    isBuyable: false,
     price: "500 MXN",
     link: "/projects/project1",
     dimensions: [30, 22]
@@ -438,6 +461,7 @@ export const Eye: Work =  {
         "en": "Eye",
         "ja": "目"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/eye.jpg",
 
@@ -445,7 +469,7 @@ export const Eye: Work =  {
         "en": ""
     },
         
-    isBuyable: true,
+    isBuyable: false,
     price: "500 MXN",
     link: "/projects/project1",
     dimensions: [30, 22]
@@ -457,6 +481,7 @@ export const Butterfly: Work =  {
         "en": "Butterfly",
         "ja": "蝶"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/eye.jpg",
 
@@ -476,6 +501,7 @@ export const Clock: Work =  {
         "en": "Clock",
         "ja": "時計"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/clock.jpg",
 
@@ -501,6 +527,7 @@ export const ScaryPumpkin: Work =  {
         "en": "Scary pumpkin",
         "ja": "怖いカボチャ"
     },
+    technique: InkOnPaper,
     year: 2025,
     imageUrl: "/img/art/scary_pumpkin.jpg",
     previewUrl: "/img/art/scary_pumpkin_low.jpg",
@@ -514,6 +541,30 @@ export const ScaryPumpkin: Work =  {
     link: "/projects/project1",
     dimensions: [11, 11]
 };
+
+export const TimeWeight: Work =  {
+    title: {
+        "es": "El tiempo pasado pesa",
+        "en": "Elapsed time is heavy",
+        "ja": "時過重在"
+    },
+    technique: InkOnPaper,
+    year: 2026,
+    imageUrl: "/img/art/time_weight.jpg",
+    previewUrl: "/img/art/time_weight.jpg",
+
+    description: {
+        "en": "The elapsed time is filled of heavy regrets and missed time.",
+        "es": "El tiempo pasado esta lleno de pesados arrepentimientos y tiempo perdido.",
+        "ja": "過去は重い後悔と失った時間で満ちています。",
+    },
+        
+    isBuyable: false,
+    price: "600 MXN",
+    link: "/projects/project1",
+    dimensions: [28, 21]
+}
+
 //#endregion
 
 export const modifyWork = (base: Work, changes: Partial<Work>): Work => {

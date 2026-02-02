@@ -1,13 +1,13 @@
+export type Translatable = {
+    "en": string;
+    [key: string]: string;
+};
+
 export type Work = {
-    title: {
-        "en": string;
-        [key: string]: string;
-    }
-    description: {
-        "en": string;
-        [key: string]: string;
-    }
+    title: Translatable
+    description: Translatable
     dimensions: [number, number];
+    technique: Translatable;
     dimensionsUnit?: string;
     year?: number;
     price?: string;

@@ -38,6 +38,9 @@ const WorkModal: React.FC<WorkModalProps> = ({ selectedWork, onCloseModal }) => 
                   <b>{t('work.dimensions')}:</b> {selectedWork.dimensions[0]} x {selectedWork.dimensions[1]} {selectedWork.dimensionsUnit ?? "cm"} 
                 </li>
                 <li>
+                  <b>{t('work.technique')}:</b> {selectedWork?.technique?.[language] ?? selectedWork?.technique?.["en"]} 
+                </li>
+                <li>
                   <b>{t('work.year')}:</b> {selectedWork?.year ?? "N/A"}
                 </li>
                 {selectedWork.isBuyable && <li>

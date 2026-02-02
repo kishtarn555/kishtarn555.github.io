@@ -27,7 +27,7 @@ import WorkModal from "../../../../components/ArtGallery/workModal";
 const CONTENT: Work[] = [
   EmergentCia,
   modifyWork(CloseTheThirdEye, {
-    isBuyable: true,
+    isBuyable: false,
     price: "1000 MXN",
   }),
   Coffee,
