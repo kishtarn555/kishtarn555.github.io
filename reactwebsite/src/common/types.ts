@@ -23,3 +23,14 @@ export interface IRepresentationalProps {
     selectedWork?: Work;
     setSelectedWork: React.Dispatch<React.SetStateAction<Work | undefined>>;
 }
+
+
+export type CPTopic = {
+    label: string,
+    problems: CPProblem[]
+}
+export type CPProblem = {
+    label: string
+    url: string
+    solutionUrl?: string
+};

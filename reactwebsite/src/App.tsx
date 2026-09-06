@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Developer from './pages/dev/projects';
 import Sombras from './pages/art/events/sombras';
 import Gallery from './pages/art/gallery'
+import Omiags2026 from './pages/rekarel/cursos/omiags2026';
 function App() {
   return (
     <LanguageProvider>
@@ -15,6 +16,7 @@ function App() {
             <Route path="/art" element={<Gallery />} />
             <Route path="/developer" element={<Developer />} />
             <Route path="/events/sombras" element={<Sombras />} />
+            <Route path="/developer/omiags2026" element={<Omiags2026 />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
