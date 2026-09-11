@@ -18,6 +18,19 @@ export type Work = {
     sold?: boolean;
 }
 
+export type Location = {
+    url?: string,
+    label: Translatable
+
+}
+export type Exposition = {
+    title: Translatable;
+    description: Translatable;
+    date: Translatable;
+    location: Location;
+    url?: string;
+}
+
 export interface IRepresentationalProps {
     projects: Work[];
     selectedWork?: Work;

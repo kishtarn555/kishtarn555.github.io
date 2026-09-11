@@ -1,4 +1,7 @@
 {
     "nav.home": "ホーム",
-    "home.developer": "開発者"
+    "home.developer": "開発者",
+    "expositions.title": "展覧会",
+    "expositions.description": "選ばれた作品を紹介する展覧会をご覧ください。",
+    "exposition.view": "展覧会を見る"
 }

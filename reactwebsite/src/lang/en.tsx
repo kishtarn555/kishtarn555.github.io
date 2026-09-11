@@ -7,7 +7,10 @@ const lang: Record<string, string> = {
     "work.price": "Price",
     "work.technique": "Medium",
     "work.dimensions": "Dimensions",
-    "work.sold": "(Sold)"
+    "work.sold": "(Sold)",
+    "expositions.title": "Expositions",
+    "expositions.description": "Explore exhibitions featuring selected works.",
+    "exposition.view": "View exposition"
     
 };
 export default lang

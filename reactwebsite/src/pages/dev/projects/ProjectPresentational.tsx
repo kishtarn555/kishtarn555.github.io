@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Nav from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import { Card, Col, Row, Container, Modal } from "react-bootstrap";
+import { Col, Row, Container, Modal } from "react-bootstrap";
 import { IRepresentationalProps, Project } from "./types";
 import { useLanguage } from "../../../lang/languageContext";
 import ConstructionWarning from "../../../components/warnings/construction";
+import ProjectCard from "../../../components/ProjectCard";
 const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) => {
     const { language } = useLanguage();
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -26,25 +27,7 @@ const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) =
           <Row>
             {projects.map((project) => (
               <Col key={project.title} md={6} lg={4} className="mb-4">
-                <Card
-                  className="h-100 hover-effect"
-                  role="button"
-                  tabIndex={0}
-                  onClick={() => setSelectedProject(project)}
-                  onKeyDown={(event) => {
-                    if (event.key === "Enter" || event.key === " ") {
-                      event.preventDefault();
-                      setSelectedProject(project);
-                    }
-                  }}
-                >
-                  <Card.Body>
-                    <Card.Title>{project.title}</Card.Title>
-                    <Card.Text className="advanced-truncate">
-                        {getDescription(project)}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                <ProjectCard project={project} onClick={setSelectedProject} />
               </Col>
             ))}
           </Row>

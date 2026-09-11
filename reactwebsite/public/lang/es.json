@@ -8,6 +8,9 @@
     "work.price": "Precio",
     "work.technique": "Técnica",
     "work.dimensions": "Dimensiones",
-    "work.sold": "(Vendido)"
+    "work.sold": "(Vendido)",
+    "expositions.title": "Exposiciones",
+    "expositions.description": "Explora exposiciones con una selección de obras.",
+    "exposition.view": "Ver exposición"
 
 }
