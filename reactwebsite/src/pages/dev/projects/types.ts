@@ -4,7 +4,14 @@ export type Project = {
         "en": string;
         [key: string]: string;
     }
-    link?: string;
+    links? : {
+        url: string;
+        icon?: string
+        label: {
+            "en": string;
+            [key: string]: string;
+        }
+    }[]
     imageUrl?: string;
 }
 

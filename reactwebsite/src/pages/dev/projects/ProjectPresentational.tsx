@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import { Card, Col, Row, Container } from "react-bootstrap";
-import { IRepresentationalProps } from "./types";
+import { Card, Col, Row, Container, Modal } from "react-bootstrap";
+import { IRepresentationalProps, Project } from "./types";
 import { useLanguage } from "../../../lang/languageContext";
 const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) => {
     const { language } = useLanguage();
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+    const getDescription = (project: Project) =>
+      project.description[language] ?? project.description["en"];
   
   return (
     <>
@@ -19,13 +22,24 @@ const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) =
           </p>
 
           <Row>
-            {projects.map((project, index) => (
-              <Col key={index} md={6} lg={4} className="mb-4">
-                <Card className="h-100 hover-effect">
+            {projects.map((project) => (
+              <Col key={project.title} md={6} lg={4} className="mb-4">
+                <Card
+                  className="h-100 hover-effect"
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => setSelectedProject(project)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      setSelectedProject(project);
+                    }
+                  }}
+                >
                   <Card.Body>
                     <Card.Title>{project.title}</Card.Title>
                     <Card.Text className="advanced-truncate">
-                        {project.description[language] ?? project.description["en"]}
+                        {getDescription(project)}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -35,6 +49,27 @@ const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) =
         </Container>
       </main>
       <Footer />
+      <Modal show={selectedProject !== null} onHide={() => setSelectedProject(null)}>
+        {selectedProject && (
+          <>
+            <Modal.Header closeButton>
+              <Modal.Title>{selectedProject.title}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <p>{getDescription(selectedProject)}</p>
+              {selectedProject.links && (
+                <ul>
+                  {
+                  selectedProject.links.map(el=> (
+                    <li id={el.url}><a href={el.url}>{el.label[language]??el.label["en"]}</a></li>
+                  ))
+                  }
+                </ul>
+              )}
+            </Modal.Body>
+          </>
+        )}
+      </Modal>
     </>
   );
 };
