@@ -4,6 +4,7 @@ import Footer from "../../../components/Footer";
 import { Card, Col, Row, Container, Modal } from "react-bootstrap";
 import { IRepresentationalProps, Project } from "./types";
 import { useLanguage } from "../../../lang/languageContext";
+import ConstructionWarning from "../../../components/warnings/construction";
 const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) => {
     const { language } = useLanguage();
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -16,6 +17,7 @@ const ProjectPresentational: React.FC<IRepresentationalProps> = ({ projects }) =
       <main className="dev-container">
         <Container fluid className="m-4 border rounded p-2 w-auto bg-body shadow">
           <h1>Developer Projects</h1>
+          <ConstructionWarning/>
           <p>
             Welcome to the developer projects page. Here you will find a list of
             my software development projects.
