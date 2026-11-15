@@ -9,12 +9,14 @@ interface WorkGalleryProps {
     onWorkClick?: (index: number, work: Work) => void;
     language?: string;
     showDescription?: boolean;
+    onSoldDarken?: boolean,
 }
 
 export const ProjectGallery: React.FC<WorkGalleryProps> = ({
     workList: projectList,
     onWorkClick: onProjectClick,
-    showDescription = true
+    showDescription = true,
+    onSoldDarken=false
 }) => {
     const {language} = useLanguage();
     return (
@@ -27,7 +29,7 @@ export const ProjectGallery: React.FC<WorkGalleryProps> = ({
                                 <Card.Title>{project.title[language] ?? project.title['en']}</Card.Title>
                                 <div className="position-relative center-center w-100">
                                     <div
-                                        className="gallery-photo-container border rounded p-2 ms-auto me-auto"
+                                        className={`gallery-photo-container border rounded p-2 ms-auto me-auto ${onSoldDarken && project.sold ? 'art-sold':''}`}
                                         onClick={() => onProjectClick?.(index, project)}
                                     >
                                         <Card.Img
@@ -37,6 +39,11 @@ export const ProjectGallery: React.FC<WorkGalleryProps> = ({
                                         <div className="position-absolute top-50 start-50 translate-middle eye-icon">
                                             <i className="bi bi-eye"></i>
                                         </div>
+                                        {onSoldDarken && project.sold  && (
+                                            <div className="position-absolute top-50 start-50 translate-middle sold-icon">
+                                                <i className="bi bi-x-octagon"></i>
+                                            </div>)
+                                        }
                                     </div>
                                 </div>
                             </div>

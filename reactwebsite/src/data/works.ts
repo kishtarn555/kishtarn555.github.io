@@ -3,6 +3,29 @@ import { DigitalColor, InkOnPaper, PencilOnPapel, WhiteCharcoal } from "./techni
 
 // Because we hate paying for databases
 
+export const Pandiculation: Work =  {
+    title: {
+        "es": "Pandiculación pandeada",
+        "en": "Bent pandiculation",
+        "ja": "Bent pandiculation"
+    },
+    technique: PencilOnPapel,
+    year: 2026.05,
+    imageUrl: "/img/art/pandiculacion_mid.jpg",
+    previewUrl: "/img/art/pandiculacion_low.jpg",
+
+    description: {
+        "en": "The drawing shows the artists enjoying a pandiculation to the left. But this action has been interrupted in the right by an unexpected muscle cramp.",
+        "es": "El dibujo depicta un al artista realizando una pandiculación (estirarse) en la mañana, con resultados agradables como se ve en la izquierda. Pero en la derecha se ve sorprendido por un calambre inesperado.",
+        "ja": "この絵に、左の画家は欠伸がたのしめていら。でも、右の画家は突然な痛みで欠伸が切られた。",
+    },
+        
+    isBuyable: true,
+    price: "1000 MXN (Enmarcado)",
+    sold: false,
+    link: "/projects/project1",
+    dimensions: [35, 30]
+}
 export const CloseTheThirdEye: Work = {
     title: {
         "es": "Cierra el tercer ojo",
@@ -10,7 +33,7 @@ export const CloseTheThirdEye: Work = {
         "ja": "三つ目の目を閉じて"
     },
     technique: PencilOnPapel,
-    year: 2025,
+    year: 2025.12,
     imageUrl: "/img/art/third_eye.jpg",
     previewUrl: "/img/art/third_eye_low.jpg",
 
@@ -21,7 +44,7 @@ export const CloseTheThirdEye: Work = {
         
     link: "/projects/project1",
     isBuyable: true,
-    price: "1000 MXN",
+    price: "1000 MXN (Enmarcado)",
     dimensions: [30, 30]
 };
 export const StillRememberYou: Work = {
@@ -123,8 +146,8 @@ export const InvitingPumpkin: Work =  {
         "en": ""
     },
         
-    isBuyable: false,
-    price: "600 MXN",
+    isBuyable: true,
+    price: "600 MXN (Enmarcada)",
     link: "/projects/project1",
     dimensions: [30, 22]
 };
@@ -217,14 +240,14 @@ export const Bone: Work = {
         "ja": "骨"
     },
     technique: InkOnPaper,
-    year: 2025,
+    year: 2025.10,
     imageUrl: "/img/art/bone.jpg",
 
     description: {
         "en": "",
     },
         
-    isBuyable: false,
+    isBuyable: true,
     sold: true,
     price: "",
     link: "/projects/project1",
@@ -570,6 +593,7 @@ export const TimeWeight: Work =  {
 //#endregion
 
 export const allWorks: Work[] = [
+    Pandiculation,
     CloseTheThirdEye,
     StillRememberYou,
     Rite,

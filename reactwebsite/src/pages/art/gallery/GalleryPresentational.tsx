@@ -31,13 +31,13 @@ const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, set
             <hr></hr>
             <h2 className="ms-3">{t('gallery.catalog')}</h2>
             <p className="ms-4">
-              {t('gallery.highlighted.body')}
+              {t('gallery.catalog.body')}
             </p>
             <ProjectGallery
               workList={soldableWorks}
               showDescription={false}
               onWorkClick={(_, work)=>setSelectedWork(work)}
-
+              onSoldDarken
             />
         </Container>
       </main>

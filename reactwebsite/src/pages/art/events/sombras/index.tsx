@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "../../../../components/Navbar";
 import Footer from "../../../../components/Footer";
-import { Badge, Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { Work } from "../../../../common/types";
 import {
   Bone,

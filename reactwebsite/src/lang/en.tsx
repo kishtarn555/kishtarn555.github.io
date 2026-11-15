@@ -16,6 +16,9 @@ const lang = {
     "gallery.highlighted.body": "Watch some of my selected works.",
     "gallery.catalog": "Catalog",
     "gallery.catalog.body": "Works being sold (prices do not include shipping)",
+    "work.buy":"Contact to purchase",
+    "work.buy.head":"I want to buy art",
+    "work.buy.body": "Hello, I saw on your website a piece I want to buy, its name is:",
     
 } as const;
 export default lang

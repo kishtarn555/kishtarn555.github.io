@@ -80,10 +80,17 @@ body {
 }
 
 .gallery-photo-container:hover {
+    
     filter: brightness(50%);
     z-index: 5;
     cursor: pointer;
 }
+
+.gallery-photo-container.art-sold {
+    filter: brightness(40%);
+    
+}
+
 
 .showcase-photo {
     max-width: 100%;
@@ -101,6 +108,18 @@ body {
     color:white;
     z-index: 10;
 }
+.gallery-photo-container:hover .sold-icon {
+    opacity: 0;    
+    z-index: 5;
+}
+.sold-icon {
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-size: 2rem;
+    color:rgb(255, 168, 168);
+    z-index: 5;
+}
+
 
 .sombras-banner {
     max-width: 100%;
