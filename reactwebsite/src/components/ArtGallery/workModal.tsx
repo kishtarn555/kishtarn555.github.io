@@ -41,7 +41,7 @@ const WorkModal: React.FC<WorkModalProps> = ({ selectedWork, onCloseModal }) => 
                   <b>{t('work.technique')}:</b> {selectedWork?.technique?.[language] ?? selectedWork?.technique?.["en"]} 
                 </li>
                 <li>
-                  <b>{t('work.year')}:</b> {selectedWork?.year ?? "N/A"}
+                  <b>{t('work.year')}:</b> {selectedWork?.year ? Math.trunc(selectedWork?.year) : "N/A"}
                 </li>
                 {selectedWork.isBuyable && <li>
                   <b>{t('work.price')}:</b> {selectedWork.sold? <><s>{selectedWork.price}</s> {t('work.sold')}</>: selectedWork.price}

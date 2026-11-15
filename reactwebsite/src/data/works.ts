@@ -20,7 +20,7 @@ export const CloseTheThirdEye: Work = {
     },
         
     link: "/projects/project1",
-    isBuyable: false,
+    isBuyable: true,
     price: "1000 MXN",
     dimensions: [30, 30]
 };
@@ -31,7 +31,7 @@ export const StillRememberYou: Work = {
         "ja": "君をまだ覚えている"
     },
     technique: InkOnPaper,
-    year: 2025,
+    year: 2025.11,
     imageUrl: "/img/art/still_remember.jpg",
     previewUrl: "/img/art/still_remember_low.jpg",
 
@@ -40,9 +40,9 @@ export const StillRememberYou: Work = {
         "es": "En honor de mi perro fallecido, que en paz descanse. Dibujado durante el Día de los muertos",
         "ja": "亡くなった犬に。死者の日に描きました"
     },
-    isBuyable: false,
+    isBuyable: true,
     sold: true,
-    price: "600 MXN",        
+    price: "",        
     link: "/projects/project1",
     dimensions: [13, 21]
 };
@@ -79,10 +79,10 @@ export const EmergentCia: Work = {
         es: 'Este dibujo capta el inicio del viaje de un artista, levantando su arte desde el anonimato.',
     },
     technique: WhiteCharcoal,
-    year: 2026,
+    year: 2026.01,
     imageUrl: '/img/art/emergentcia_low.jpg',
-    isBuyable: false,
-    price: '1000 MXN',
+    isBuyable: true,
+    price: '',
     sold:true,
     dimensions: [50, 36]
 }
@@ -144,8 +144,8 @@ export const Lunaccino: Work = {
         "en": ""
     },
         
-    isBuyable: false,
-    price: "400 MXN",
+    isBuyable: true,
+    price: "400 MXN (Enmarcado)",
     link: "/projects/project1",
     dimensions: [22, 18]
 };
@@ -225,7 +225,8 @@ export const Bone: Work = {
     },
         
     isBuyable: false,
-    price: "400 MXN",
+    sold: true,
+    price: "",
     link: "/projects/project1",
     dimensions: [20, 26]
 };
@@ -549,7 +550,7 @@ export const TimeWeight: Work =  {
         "ja": "時過重在"
     },
     technique: InkOnPaper,
-    year: 2026,
+    year: 2026.02,
     imageUrl: "/img/art/time_weight.jpg",
     previewUrl: "/img/art/time_weight.jpg",
 
@@ -559,13 +560,44 @@ export const TimeWeight: Work =  {
         "ja": "過去は重い後悔と失った時間で満ちています。",
     },
         
-    isBuyable: false,
-    price: "600 MXN",
+    isBuyable: true,
+    price: "",
+    sold: true,
     link: "/projects/project1",
     dimensions: [28, 21]
 }
 
 //#endregion
+
+export const allWorks: Work[] = [
+    CloseTheThirdEye,
+    StillRememberYou,
+    Rite,
+    EmergentCia,
+    Coffee,
+    InvitingPumpkin,
+    Lunaccino,
+    Magia,
+    CatInCustoms,
+    Candle,
+    Bone,
+    Hearth,
+    Cempasutchil,
+    Ghost,
+    Star,
+    ColdCoffee,
+    Altar,
+    PanDeMuerto25Color,
+    PanDeMuerto25BW,
+    Snek,
+    Shadow,
+    Plant,
+    Eye,
+    Butterfly,
+    Clock,
+    ScaryPumpkin,
+    TimeWeight
+];
 
 export const modifyWork = (base: Work, changes: Partial<Work>): Work => {
     return {

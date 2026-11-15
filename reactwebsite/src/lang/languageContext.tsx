@@ -13,7 +13,7 @@ type Dictionary = Record<string, string>;
 interface LanguageContextValue {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (key: string) => string;
+  t: (key: keyof typeof English) => string;
   loading: boolean;
 }
 
@@ -75,7 +75,7 @@ export function LanguageProvider({ children }: Props) {
     };
   }, [language]);
 
-  const t = (key: string) => dict[key] ?? English[key] ?? key;
+  const t = (key:keyof typeof English) => dict[key] ?? English[key] ?? key;
 
   return (
     <LanguageContext.Provider

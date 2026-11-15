@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import GalleryPresentational from "./GalleryPresentational";
 import { Work } from "../../../common/types";
-import { CloseTheThirdEye, EmergentCia, Lunaccino, PanDeMuerto25Color, Rite, ScaryPumpkin, StillRememberYou, TimeWeight } from "../../../data/works";
+import { allWorks, CloseTheThirdEye, EmergentCia, Lunaccino, PanDeMuerto25Color, Rite, ScaryPumpkin, StillRememberYou, TimeWeight } from "../../../data/works";
 
 const CONTENT: Work[] = [
     CloseTheThirdEye,
@@ -22,7 +22,13 @@ const GalleryContainer: React.FC = () => {
     projects={CONTENT}
     selectedWork={selectedWork}
     setSelectedWork={setSelectedWork}
-  
+    soldableWorks={
+      allWorks
+        .filter(t=>t.isBuyable)
+        .sort(
+          (a:Work,b:Work)=>(b.year?? 2001)-(a.year?? 2001)
+        )
+    }
   />;
 };
 

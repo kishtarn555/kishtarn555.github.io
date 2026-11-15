@@ -6,23 +6,35 @@ import { IRepresentationalProps } from "./types";
 import ConstructionWarning from "../../../components/warnings/construction";
 import WorkModal from "../../../components/ArtGallery/workModal";
 import { ProjectGallery } from "../../../components/ArtGallery";
-const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, setSelectedWork, selectedWork }) => {
-  
+import { useLanguage } from "../../../lang/languageContext";
+const GalleryPresentational: React.FC<IRepresentationalProps> = ({ projects, setSelectedWork, selectedWork, soldableWorks }) => {
+  const {t} = useLanguage();
   return (
     <>
       <Nav />
       <main className="dev-container">
         <Container fluid className="m-4 border rounded p-2 w-auto bg-body shadow">
           
-          <h1>Gallery</h1>
+          <h1>{t('gallery.title')}</h1>
           <ConstructionWarning/>
           <hr></hr>
-          <h2>Highlighted</h2>          
-          <p>
-            Watch some of my selected works.
+          <h2 className="ms-3">{t('gallery.highlighted')}</h2>          
+          <p className="ms-4">
+            {t('gallery.highlighted.body')}
           </p>
             <ProjectGallery
               workList={projects}
+              showDescription={false}
+              onWorkClick={(_, work)=>setSelectedWork(work)}
+
+            />
+            <hr></hr>
+            <h2 className="ms-3">{t('gallery.catalog')}</h2>
+            <p className="ms-4">
+              {t('gallery.highlighted.body')}
+            </p>
+            <ProjectGallery
+              workList={soldableWorks}
               showDescription={false}
               onWorkClick={(_, work)=>setSelectedWork(work)}
 

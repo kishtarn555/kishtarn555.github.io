@@ -11,6 +11,11 @@
     "work.sold": "(Vendido)",
     "expositions.title": "Exposiciones",
     "expositions.description": "Explora exposiciones con una selección de obras.",
-    "exposition.view": "Ver exposición"
+    "exposition.view": "Ver exposición",
+    "gallery.title": "Galería",
+    "gallery.highlighted": "Destacados",
+    "gallery.highlighted.body": "Mira una selección de mis trabajos.",
+    "gallery.catalog": "Catálogo",
+    "gallery.catalog.body": "Obras a la venta (Los precios no incluyen el envío)."
 
 }
