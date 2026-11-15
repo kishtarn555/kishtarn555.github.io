@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "../../../../components/Navbar";
 import Footer from "../../../../components/Footer";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Badge, Button, Col, Container, Row } from "react-bootstrap";
 import { Work } from "../../../../common/types";
 import {
   Bone,
@@ -79,6 +79,17 @@ const Samo: React.FC = () => {
           fluid
           className="m-4 border rounded p-4 w-auto bg-body shadow text-justify"
         >
+          <Button
+            as="a"
+            href="https://www.instagram.com/p/DTdnqVCEcIo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline-secondary"
+            size="sm"
+            className="mb-3"
+          >
+            Instagram post  <span aria-hidden="true">↗</span>
+          </Button>
           <p>
             Primera exposición individual de Héctor “Kishtarn” Ricárdez, quien
             desde joven participó en olimpiadas de la ciencia, incluida la

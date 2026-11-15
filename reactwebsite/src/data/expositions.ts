@@ -4,10 +4,15 @@ const SAMO:Location = {
     label: {en: "Samö Cafeart, León, Gto, MX"},
     url: "https://www.instagram.com/samo.cafeart/"
 }
+const UGForum:Location = {
+    label: {en: "UG sede Forum, León, Gto, MX"},
+    url: "https://maps.app.goo.gl/Ktmjbm4ipAL4wHyx7"
+}
 const CasaOlinka:Location = {
     label: {en: "Casa Olinka, Puebla, Pue, MX"},
     url: "https://www.instagram.com/casaolinka/"
 }
+
 export const SombrasDeKishtarn: Exposition = {
     title: {
         en: "Sombras de Kishtarn (Kishtarn's shadows)",
@@ -65,6 +70,26 @@ export const Umbral: Exposition = {
         ja: "2025年11月"
     },
     location: SAMO
-
 };
-export const EXPOSITIONS: Exposition[] = [SombrasDeKishtarn, BlackMarket, Umbral];
+
+export const MuestraLeon2026: Exposition = {
+    title: {
+        en: "Leon art showcase MAL",
+        es: "Muestra de arte Leonesa MAL",
+        ja: "Leon街の芸術の展示 MAL"
+    },
+    description: {
+        en: "Collective exposition of the city artists",
+        es: "Exposición colectiva de la ciudad.",
+        ja: "Leon街の複数人の展示。"
+    },
+    date: {
+        en: "November, 2026",
+        es: "Noviembre de 2026",
+        ja: "2026年11月"
+    },
+    url: "https://www.instagram.com/muestraleonesa.mal/",
+    location: UGForum
+};
+
+export const EXPOSITIONS: Exposition[] = [MuestraLeon2026, SombrasDeKishtarn, BlackMarket, Umbral];
